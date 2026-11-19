@@ -42,7 +42,7 @@
 
 不存每位議員一列。開放數據有議員姓名。這裡要的是議案名稱和結果，所以摺成一筆議案。
 
-不抽取 PDF 文字。17MB 的會議過程檔只存連結。委員會紀要也只存連結。使用者要的連結或內容，這一版只存連結。
+不抽取 PDF 文字。PDF 檔本身要存下來。來源網址仍寫在 `url`。
 
 ## 四張表
 
@@ -73,8 +73,19 @@
 - `paper_label`，例如 `CB(2)1517/2026(01)`。沒有編號就空着
 - `title`
 - `url`。只限委員參閱、頁上沒有連結時是空
+- `local_path`。當日已在網站上的 PDF 才有值。否則是空
 
 主鍵是 `meet_id`、`role`，再加 `paper_label` 或 `url`。
+
+PDF 的路徑是 `data/` 加 `committee_name`，再加 `meeting_date`，再加網址最後一段檔名。`committee_name` 就是 `subject_chi`，包含結尾的「會議」。檔案跟所屬會議走，不跟網址裡的另一個委員會走。重跑寫入同一個路徑。
+
+2026-11-09 下午 2 時 30 分會寫入的例子如下。
+
+- `data/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-1-c.pdf`
+- `data/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-1-c.pdf`
+- `data/民政及文化體育事務委員會會議/2026-11-09/ha20261109cb3-1314-1-c.pdf`
+
+該日《2026年醫生註冊(修訂)條例草案》委員會沒有可存的 PDF。紀要要等到檔案在截止時間前已在網站上，才寫進同一個日期資料夾，例如 `data/福利事務委員會會議/2026-11-09/ws20261109.pdf`。
 
 `motion` 的主人是一場會議裡的一次表決。
 
@@ -117,8 +128,8 @@ HTTP 和 HTML 在邊界收成上面的列。邊界之內不再檢查空值。
 
 1. 讀當日 Tmeeting。按 `meet_id` upsert `meeting`。新會議的 `status` 是 `open`。
 2. 再取出 `status` 仍是 `open`、而且 `follow_up_until` 尚未過去的舊會議。
-3. 對每一場讀 `agenda_url`。upsert 議程項目和 `agenda_paper`。主鍵已在就更新標題和 `url`。
-4. 試紀要位址。200 就 upsert `role` 為 `minutes` 的文件。
+3. 對每一場讀 `agenda_url`。upsert 議程項目和 `agenda_paper`。主鍵已在就更新標題和 `url`。已在網站上的 PDF 寫入 `local_path`。
+4. 試紀要位址。截止時間前已在網站上，就 upsert `role` 為 `minutes` 的文件，並把 PDF 寫入同一個日期資料夾。
 5. 讀當日 `vVotingResult`，摺成 `motion`，掛到對得上的 `meet_id`。
 6. 立法會會議再試表決 PDF。200 就 upsert `voting_sheet`。
 7. 議程上新出現、又不是上面幾種的連結，用 `later_paper` 插入。
