@@ -33,7 +33,8 @@
           "role": "agenda_paper",
           "paper_label": "PWSC(2026-27)19",
           "title": "PWSC(2026-27)19",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/工務小組委員會會議/2026-11-18/P26-19-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/minutes/dev20261027.pdf",
@@ -44,7 +45,8 @@
           "role": "agenda_paper",
           "paper_label": "會議紀要",
           "title": "會議紀要",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/工務小組委員會會議/2026-11-18/dev20261027.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/papers/dev20261027cb1-1469-1-c.pdf",
@@ -55,7 +57,8 @@
           "role": "agenda_paper",
           "paper_label": "補充資料",
           "title": "補充資料",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/工務小組委員會會議/2026-11-18/dev20261027cb1-1469-1-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/minutes/pwsc20261118.pdf",
@@ -66,7 +69,8 @@
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
-          "item_key": null
+          "item_key": null,
+          "local_path": null
         }
       ],
       "motions": []
@@ -228,7 +232,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年電子交易(修訂)條例草案》",
           "title": "《2026年電子交易(修訂)條例草案》",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": "data/立法會會議/2026-11-18/b202611061.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc103#meetings",
@@ -239,7 +244,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年證據(修訂)條例草案》",
           "title": "《2026年證據(修訂)條例草案》",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": null
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/CB(2)1506_2026(01)_c.pdf",
@@ -250,7 +256,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(2)1506/2026(01)",
           "title": "CB(2)1506/2026(01)",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": "data/立法會會議/2026-11-18/CB(2)1506_2026(01)_c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc104#meetings",
@@ -261,7 +268,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年成文法(雜項規定)條例草案》",
           "title": "《2026年成文法(雜項規定)條例草案》",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": null
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/CB(2)1514_2026(01)_c.pdf",
@@ -272,7 +280,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(2)1514/2026(01)",
           "title": "CB(2)1514/2026(01)",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": "data/立法會會議/2026-11-18/CB(2)1514_2026(01)_c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc03#meetings",
@@ -283,7 +292,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年銀行業法例(雜項修訂)條例草案》",
           "title": "《2026年銀行業法例(雜項修訂)條例草案》",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": null
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/CB(2)1471_2026(01)_c.pdf",
@@ -294,7 +304,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(2)1471/2026(01)",
           "title": "CB(2)1471/2026(01)",
-          "item_key": "III"
+          "item_key": "III",
+          "local_path": "data/立法會會議/2026-11-18/CB(2)1471_2026(01)_c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261118cb2-1446-1-c.pdf",
@@ -305,7 +316,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(2)1446/2026(01)",
           "title": "CB(2)1446/2026(01)",
-          "item_key": "IV"
+          "item_key": "IV",
+          "local_path": "data/立法會會議/2026-11-18/cm20261118cb2-1446-1-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261111cb1-1347-1-c.pdf",
@@ -316,7 +328,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(1)1347/2026(01)",
           "title": "CB(1)1347/2026(01)",
-          "item_key": "V"
+          "item_key": "V",
+          "local_path": "data/立法會會議/2026-11-18/cm20261111cb1-1347-1-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261111cb1-1434-1-c.pdf",
@@ -327,7 +340,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(1)1434/2026",
           "title": "CB(1)1434/2026",
-          "item_key": "V"
+          "item_key": "V",
+          "local_path": "data/立法會會議/2026-11-18/cm20261111cb1-1434-1-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261118cb1-1401-1-c.pdf",
@@ -338,7 +352,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(1)1401/2026(01)",
           "title": "CB(1)1401/2026(01)",
-          "item_key": "V"
+          "item_key": "V",
+          "local_path": "data/立法會會議/2026-11-18/cm20261118cb1-1401-1-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261118cb1-1460-1-c.pdf",
@@ -349,7 +364,8 @@
           "role": "agenda_paper",
           "paper_label": "CB(1)1460/2026",
           "title": "CB(1)1460/2026",
-          "item_key": "V"
+          "item_key": "V",
+          "local_path": "data/立法會會議/2026-11-18/cm20261118cb1-1460-1-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261118-sp104-c.pdf",
@@ -360,7 +376,8 @@
           "role": "agenda_paper",
           "paper_label": "香港海關福利基金截至2026年3月31日止年度的財務報表、審計署署長報告，以及海關關長法團報告",
           "title": "香港海關福利基金截至2026年3月31日止年度的財務報表、審計署署長報告，以及海關關長法團報告",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/立法會會議/2026-11-18/cm20261118-sp104-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261118-sp105-c.pdf",
@@ -371,7 +388,8 @@
           "role": "agenda_paper",
           "paper_label": "香港海關人員子女教育信託基金二零二五年四月一日至二零二六年三月三十一日的受託人報告書、財務報表及審計署署長報告",
           "title": "香港海關人員子女教育信託基金二零二五年四月一日至二零二六年三月三十一日的受託人報告書、財務報表及審計署署長報告",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/立法會會議/2026-11-18/cm20261118-sp105-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hccb2-1513-c.pdf",
@@ -382,7 +400,8 @@
           "role": "agenda_paper",
           "paper_label": "內務委員會有關研究附屬法例及其他文書的第20/2026號報告",
           "title": "內務委員會有關研究附屬法例及其他文書的第20/2026號報告",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/立法會會議/2026-11-18/hccb2-1513-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc103/reports/bc10320261118cb3-1347-c.pdf",
@@ -393,7 +412,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年證據(修訂)條例草案》委員會報告",
           "title": "《2026年證據(修訂)條例草案》委員會報告",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/立法會會議/2026-11-18/bc10320261118cb3-1347-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc104/reports/bc10420261118cb3-1375-c.pdf",
@@ -404,7 +424,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年成文法(雜項規定)條例草案》委員會報告",
           "title": "《2026年成文法(雜項規定)條例草案》委員會報告",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/立法會會議/2026-11-18/bc10420261118cb3-1375-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc03/reports/bc0320261118cb1-1398-c.pdf",
@@ -415,7 +436,8 @@
           "role": "agenda_paper",
           "paper_label": "《2026年銀行業法例(雜項修訂)條例草案》委員會報告",
           "title": "《2026年銀行業法例(雜項修訂)條例草案》委員會報告",
-          "item_key": "I"
+          "item_key": "I",
+          "local_path": "data/立法會會議/2026-11-18/bc0320261118cb1-1398-c.pdf"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/floor/cm20261118-confirm-ec.pdf",
@@ -426,7 +448,8 @@
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
-          "item_key": null
+          "item_key": null,
+          "local_path": null
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261118.pdf",
@@ -437,7 +460,8 @@
           "role": "voting_sheet",
           "paper_label": null,
           "title": "表決結果",
-          "item_key": null
+          "item_key": null,
+          "local_path": null
         }
       ],
       "motions": [

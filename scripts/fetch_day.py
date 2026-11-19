@@ -101,6 +101,13 @@ def votes_on(day, cutoff_local):
     return kept, later
 
 
+def pdf_path(committee_name, meeting_date, url, ready):
+    path = urllib.parse.urlparse(url).path
+    if not ready or not path.lower().endswith(".pdf"):
+        return None
+    return f"data/{committee_name}/{meeting_date}/{path.rsplit('/', 1)[-1]}"
+
+
 def probe(url, cutoff_utc):
     code, headers, _ = get(url, method="HEAD")
     modified = last_modified(headers)
@@ -192,6 +199,9 @@ def main():
             voting_sheet.update({"role": "voting_sheet", "paper_label": None, "title": "表決結果", "item_key": None})
         motions = kept_votes if row.get("subject_chi") == "立法會會議" else []
         stored_minutes = bool(minutes and minutes["on_site_at_cutoff"])
+        committee = row["subject_chi"]
+        for doc in documents + [d for d in (minutes, voting_sheet) if d]:
+            doc["local_path"] = pdf_path(committee, day.isoformat(), doc["url"], doc["on_site_at_cutoff"])
         meetings.append(
             {
                 "meet_id": row["meet_id"],
