@@ -122,7 +122,7 @@ def parse_agenda(html, cutoff_utc):
     for part in parts[1:]:
         unit = part.split('"', 1)[0]
         number = re.search(r'item[-_]num">(.*?)</div>', part)
-        title = re.search(r'data-unit="text">(.*?)</div>', part)
+        title = re.search(r'data-unit="text">(.*?)</div>', part[number.end():]) if number else None
         if not title:
             title = re.search(r'data-unit="title"><div>(.*?)</div>', part)
         if number and title and unit.startswith("section."):
