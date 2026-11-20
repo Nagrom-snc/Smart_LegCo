@@ -124,6 +124,8 @@ HTTP 和 HTML 在邊界收成上面的列。邊界之內不再檢查空值。
 
 時區是 `Asia/Hong_Kong`。每日 14:30 跑一次。14:30 之前不讀議程。
 
+執行命令是 `python3 scripts/ingest.py`。不帶日期就用香港當天。`--date YYYY-MM-DD` 重跑該日下午 2 時 30 分的一輪，並跟進仍未完成、窗口未過的舊會議。時鐘不在這個倉庫裡，沒有 cron。2 時 30 分之前呼叫會直接返回，不讀議程，也不寫檔。資料庫是 `data/legco.sqlite`，不納入版本庫。
+
 一輪的順序如下。
 
 1. 讀當日 Tmeeting。按 `meet_id` upsert `meeting`。新會議的 `status` 是 `open`。

@@ -160,6 +160,69 @@ def parse_agenda(html, cutoff_utc):
     return items, documents
 
 
+def cutoff_for(day):
+    return datetime(day.year, day.month, day.day, 14, 30, tzinfo=HKT)
+
+
+def one_meeting(row, day, cutoff, kept_votes):
+    cutoff_utc = cutoff.astimezone(timezone.utc)
+    agenda_url = row["agenda_url_chi"]
+    code, headers, body = get(agenda_url)
+    page_modified = last_modified(headers)
+    page_ready = code == 200 and page_modified is not None and page_modified <= cutoff_utc
+    items, documents = ([], [])
+    if page_ready:
+        items, documents = parse_agenda(body.decode("utf-8", "replace"), cutoff_utc)
+    minutes = probe(minutes_url(agenda_url, day), cutoff_utc) if minutes_url(agenda_url, day) else None
+    if minutes:
+        minutes.update({"role": "minutes", "paper_label": None, "title": "會議紀要", "item_key": None})
+    voting_sheet = None
+    if "立法會會議" in (row.get("subject_chi") or ""):
+        voting_sheet = probe(
+            f"{ROOT}/yr2026/chinese/counmtg/voting/v{day.strftime('%Y%m%d')}.pdf",
+            cutoff_utc,
+        )
+        voting_sheet.update({"role": "voting_sheet", "paper_label": None, "title": "表決結果", "item_key": None})
+    motions = kept_votes if row.get("subject_chi") == "立法會會議" else []
+    stored_minutes = bool(minutes and minutes["on_site_at_cutoff"])
+    committee = row["subject_chi"]
+    docs = documents + [d for d in (minutes, voting_sheet) if d]
+    for doc in docs:
+        doc["local_path"] = pdf_path(committee, day.isoformat(), doc["url"], doc["on_site_at_cutoff"])
+    return {
+        "meet_id": row["meet_id"],
+        "meeting_date": day.isoformat(),
+        "start_time": row["start_date_time"],
+        "committee_name": committee,
+        "agenda_url": agenda_url,
+        "venue_name": row.get("venue_name_chi"),
+        "meeting_type": row.get("meeting_type_chi"),
+        "follow_up_until": (day + timedelta(days=21)).isoformat(),
+        "status": "complete" if stored_minutes else "open",
+        "agenda_page": {
+            "http_status": code,
+            "last_modified": page_modified.isoformat() if page_modified else None,
+            "on_site_at_cutoff": page_ready,
+        },
+        "agenda_items": items,
+        "documents": docs,
+        "motions": motions,
+    }
+
+
+def build_snapshot(day, now=None):
+    cutoff = cutoff_for(day)
+    rows = meetings_on(day)
+    kept_votes, later_votes = votes_on(day, cutoff)
+    observed = now.astimezone(timezone.utc) if now else datetime.now(timezone.utc)
+    return {
+        "as_of": cutoff.isoformat(),
+        "observed_at": observed.isoformat(),
+        "meetings": [one_meeting(row, day, cutoff, kept_votes) for row in rows],
+        "votes_after_cutoff": later_votes,
+    }
+
+
 def minutes_url(agenda_url, day):
     stamp = day.strftime("%Y%m%d")
     if "/counmtg/" in agenda_url:
@@ -177,61 +240,7 @@ def main():
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
     day = datetime.fromisoformat(args.date).date()
-    cutoff = datetime(day.year, day.month, day.day, 14, 30, tzinfo=HKT)
-    cutoff_utc = cutoff.astimezone(timezone.utc)
-    rows = meetings_on(day)
-    kept_votes, later_votes = votes_on(day, cutoff)
-    meetings = []
-    for row in rows:
-        agenda_url = row["agenda_url_chi"]
-        code, headers, body = get(agenda_url)
-        page_modified = last_modified(headers)
-        page_ready = code == 200 and page_modified is not None and page_modified <= cutoff_utc
-        items, documents = ([], [])
-        if page_ready:
-            items, documents = parse_agenda(body.decode("utf-8", "replace"), cutoff_utc)
-        minutes = probe(minutes_url(agenda_url, day), cutoff_utc) if minutes_url(agenda_url, day) else None
-        if minutes:
-            minutes.update({"role": "minutes", "paper_label": None, "title": "會議紀要", "item_key": None})
-        voting_sheet = None
-        if "立法會會議" in (row.get("subject_chi") or ""):
-            voting_sheet = probe(
-                f"{ROOT}/yr2026/chinese/counmtg/voting/v{day.strftime('%Y%m%d')}.pdf",
-                cutoff_utc,
-            )
-            voting_sheet.update({"role": "voting_sheet", "paper_label": None, "title": "表決結果", "item_key": None})
-        motions = kept_votes if row.get("subject_chi") == "立法會會議" else []
-        stored_minutes = bool(minutes and minutes["on_site_at_cutoff"])
-        committee = row["subject_chi"]
-        for doc in documents + [d for d in (minutes, voting_sheet) if d]:
-            doc["local_path"] = pdf_path(committee, day.isoformat(), doc["url"], doc["on_site_at_cutoff"])
-        meetings.append(
-            {
-                "meet_id": row["meet_id"],
-                "meeting_date": day.isoformat(),
-                "start_time": row["start_date_time"],
-                "committee_name": row["subject_chi"],
-                "agenda_url": agenda_url,
-                "venue_name": row.get("venue_name_chi"),
-                "meeting_type": row.get("meeting_type_chi"),
-                "follow_up_until": (day + timedelta(days=21)).isoformat(),
-                "status": "complete" if stored_minutes else "open",
-                "agenda_page": {
-                    "http_status": code,
-                    "last_modified": page_modified.isoformat() if page_modified else None,
-                    "on_site_at_cutoff": page_ready,
-                },
-                "agenda_items": items,
-                "documents": documents + [d for d in (minutes, voting_sheet) if d],
-                "motions": motions,
-            }
-        )
-    out = {
-        "as_of": cutoff.isoformat(),
-        "observed_at": datetime.now(timezone.utc).isoformat(),
-        "meetings": meetings,
-        "votes_after_cutoff": later_votes,
-    }
+    out = build_snapshot(day)
     path = Path(args.out)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
