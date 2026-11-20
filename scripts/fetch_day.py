@@ -4,6 +4,9 @@
 Writes the rows that run would store. A file is stored only when its
 Last-Modified is at or before 14:30 that day. A vote is stored only when
 vote_time is at or before 14:30. This does not download PDF bytes.
+
+Every run rewrites data/meetings.csv from every snapshot under data/.
+A snapshot without that rewrite is an unfinished run.
 """
 
 import argparse
@@ -233,6 +236,13 @@ def main():
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(path)
+    data_dir = Path(__file__).resolve().parents[1] / "data"
+    if data_dir not in path.resolve().parents:
+        raise SystemExit(f"{path} is outside {data_dir}; the CSV only reads snapshots there")
+    from export_meetings_csv import write_meetings_csv
+
+    csv_path, count = write_meetings_csv(data_dir)
+    print(f"{csv_path} {count}")
 
 
 if __name__ == "__main__":
