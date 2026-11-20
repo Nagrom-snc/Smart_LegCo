@@ -9,7 +9,17 @@ import csv
 import json
 from pathlib import Path
 
-COLUMNS = ("日期", "時間", "地點", "委員會名稱", "文件名稱", "網址", "本地路徑")
+COLUMNS = ("日期", "時間", "地點", "委員會名稱", "議程項目", "文件名稱", "網址", "本地路徑")
+
+
+def agenda_subject(meeting, item_key):
+    if not item_key:
+        return ""
+    for item in meeting.get("agenda_items") or []:
+        if item.get("item_key") == item_key:
+            title = (item.get("title") or "").strip()
+            return f"{item_key} {title}".strip()
+    return str(item_key)
 
 
 def rows_from(snapshot):
@@ -26,6 +36,7 @@ def rows_from(snapshot):
                     "時間": clock,
                     "地點": meeting.get("venue_name") or "",
                     "委員會名稱": meeting.get("committee_name") or "",
+                    "議程項目": agenda_subject(meeting, doc.get("item_key")),
                     "文件名稱": doc.get("title") or doc.get("paper_label") or "",
                     "網址": doc.get("url") or "",
                     "本地路徑": doc.get("local_path") or "",
