@@ -233,6 +233,10 @@ def main():
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(path)
+    from export_meetings_csv import write_meetings_csv
+
+    csv_path, count = write_meetings_csv(path.resolve().parents[1])
+    print(f"{csv_path} {count}")
 
 
 if __name__ == "__main__":
