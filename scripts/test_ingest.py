@@ -45,7 +45,7 @@ def meeting(meet_id, day, status="open", minutes=False, local_path=None):
 
 
 class CsvRowsTest(unittest.TestCase):
-    def test_decision_and_member_rows_follow_the_paper(self):
+    def test_decision_row_follows_the_paper_without_members(self):
         snapshot = {
             "meetings": [
                 {
@@ -70,8 +70,7 @@ class CsvRowsTest(unittest.TestCase):
                             "result": "Passed",
                             "vote_time": "2026-11-18T14:20:10+08:00",
                             "members": [
-                                {"name_ch": "李慧琼", "constituency": "Geographical Constituency", "vote": "Present", "display_order": 1},
-                                {"name_ch": "陳克勤", "constituency": "Geographical Constituency", "vote": "Absent", "display_order": 2},
+                                {"name_ch": "李慧琼", "vote": "Present"},
                             ],
                         }
                     ],
@@ -79,17 +78,12 @@ class CsvRowsTest(unittest.TestCase):
             ]
         }
         rows = rows_from(snapshot)
-        self.assertEqual([row["紀錄種類"] for row in rows], ["議程文件", "表決結果", "議員表決", "議員表決"])
+        self.assertEqual([row["紀錄種類"] for row in rows], ["議程文件", "表決結果"])
+        self.assertNotIn("議員", rows[0])
         self.assertEqual(rows[0]["文件名稱"], "法案報告")
-        self.assertEqual(rows[0]["議案"], "")
         self.assertEqual(rows[1]["議案"], "二讀")
         self.assertEqual(rows[1]["整體結果"], "通過")
         self.assertEqual(rows[1]["表決時間"], "14:20:10")
-        self.assertEqual(rows[1]["議員"], "")
-        self.assertEqual(rows[2]["議員"], "李慧琼")
-        self.assertEqual(rows[2]["議員投票"], "出席")
-        self.assertEqual(rows[3]["議員投票"], "缺席")
-        self.assertEqual(rows[3]["整體結果"], "通過")
 
 
 class IngestTest(unittest.TestCase):
