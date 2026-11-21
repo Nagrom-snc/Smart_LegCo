@@ -104,11 +104,40 @@ def votes_on(day, cutoff_local):
     return kept, later
 
 
-def pdf_path(committee_name, meeting_date, url, ready):
+def meeting_kind(committee_name, agenda_url=""):
+    """Top folder for a meeting. The agenda URL decides; the name is only a fallback."""
+    url = agenda_url or ""
+    name = committee_name or ""
+    if "/counmtg/" in url:
+        return "大會"
+    if "/fc/" in url:
+        return "財務委員會"
+    if "/panels/" in url:
+        return "事務委員會"
+    if "/bc/" in url:
+        return "法案委員會"
+    if "/hc/" in url:
+        return "內務委員會"
+    if "立法會會議" in name:
+        return "大會"
+    if "財務委員會" in name or "工務小組委員會" in name or "人事編制小組委員會" in name:
+        return "財務委員會"
+    if "事務委員會" in name:
+        return "事務委員會"
+    if "條例草案" in name:
+        return "法案委員會"
+    if "內務委員會" in name or "小組委員會" in name:
+        return "內務委員會"
+    return "其他"
+
+
+def pdf_path(committee_name, meeting_date, url, ready, agenda_url=""):
     path = urllib.parse.urlparse(url).path
     if not ready or not path.lower().endswith(".pdf"):
         return None
-    return f"data/{committee_name}/{meeting_date}/{path.rsplit('/', 1)[-1]}"
+    kind = meeting_kind(committee_name, agenda_url)
+    filename = path.rsplit("/", 1)[-1]
+    return f"data/{kind}/{committee_name}/{meeting_date}/{filename}"
 
 
 def probe(url, cutoff_utc):
@@ -183,12 +212,12 @@ def one_meeting(row, day, cutoff, kept_votes):
             cutoff_utc,
         )
         voting_sheet.update({"role": "voting_sheet", "paper_label": None, "title": "表決結果", "item_key": None})
-    motions = kept_votes if row.get("subject_chi") == "立法會會議" else []
+    motions = kept_votes if "立法會會議" in (row.get("subject_chi") or "") else []
     stored_minutes = bool(minutes and minutes["on_site_at_cutoff"])
     committee = row["subject_chi"]
     docs = documents + [d for d in (minutes, voting_sheet) if d]
     for doc in docs:
-        doc["local_path"] = pdf_path(committee, day.isoformat(), doc["url"], doc["on_site_at_cutoff"])
+        doc["local_path"] = pdf_path(committee, day.isoformat(), doc["url"], doc["on_site_at_cutoff"], agenda_url)
     return {
         "meet_id": row["meet_id"],
         "meeting_date": day.isoformat(),

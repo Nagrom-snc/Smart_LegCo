@@ -1,0 +1,249 @@
+{
+  "as_of": "2026-11-03T14:30:00+08:00",
+  "observed_at": "2026-11-21T11:26:53.326691+00:00",
+  "meetings": [
+    {
+      "meet_id": 172379,
+      "meeting_date": "2026-11-03",
+      "start_time": "2026-11-03T09:00:00",
+      "committee_name": "與實施業權註冊制度有關的8項附屬法例小組委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_leg/sc56/agenda/sc5620261103.htm",
+      "venue_name": "會議室2A",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-24",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-06T08:16:04+00:00",
+        "on_site_at_cutoff": false
+      },
+      "agenda_items": [],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_leg/sc56/minutes/sc5620261103.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-13T04:34:06+00:00",
+          "bytes": 1292558,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 172308,
+      "meeting_date": "2026-11-03",
+      "start_time": "2026-11-03T10:45:00",
+      "committee_name": "《2026年印花税(修訂)(第3號)條例草案》委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc107/agenda/bc10720261103.htm",
+      "venue_name": "會議室3",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-24",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-04T09:06:53+00:00",
+        "on_site_at_cutoff": false
+      },
+      "agenda_items": [],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc107/minutes/bc10720261103.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-13T06:38:25+00:00",
+          "bytes": 926414,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 172477,
+      "meeting_date": "2026-11-03",
+      "start_time": "2026-11-03T14:30:00",
+      "committee_name": "保安事務委員會和經濟發展事務委員會聯席會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/se/agenda/se20261103j.htm",
+      "venue_name": "會議室1",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-24",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-03T02:05:33+00:00",
+        "on_site_at_cutoff": true
+      },
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "選舉主席"
+        },
+        {
+          "item_key": "II",
+          "title": "打擊樓宇維修工程圍標及加強消防安全治理的措施"
+        },
+        {
+          "item_key": "III",
+          "title": "其他事項"
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/se/papers/seedev20261103cb2-1416-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-31T14:30:46+00:00",
+          "bytes": 1578066,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1416/2026(01)",
+          "title": "CB(2)1416/2026(01)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/保安事務委員會和經濟發展事務委員會聯席會議/2026-11-03/seedev20261103cb2-1416-1-c.pdf"
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 169770,
+      "meeting_date": "2026-11-03",
+      "start_time": "2026-11-03T16:30:00",
+      "committee_name": "經濟發展事務委員會會議(下午4時30分或在保安事務委員會與經濟發展事務委員會聯席會議結束後10分鐘，以較後者為準。)",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/edev/agenda/edev20261103.htm",
+      "venue_name": "會議室1",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-24",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-02T04:13:30+00:00",
+        "on_site_at_cutoff": true
+      },
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "自上次會議後發出的資料文件"
+        },
+        {
+          "item_key": "II",
+          "title": "下次會議的討論事項"
+        },
+        {
+          "item_key": "III",
+          "title": "旅遊業監管局的工作報告"
+        },
+        {
+          "item_key": "IV",
+          "title": "海事法例的更新"
+        },
+        {
+          "item_key": "V",
+          "title": "其他事項"
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/edev/papers/edev20261103cb2-1368-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T04:16:11+00:00",
+          "bytes": 199120,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1368/2026(01)",
+          "title": "CB(2)1368/2026(01)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/經濟發展事務委員會會議(下午4時30分或在保安事務委員會與經濟發展事務委員會聯席會議結束後10分鐘，以較後者為準。)/2026-11-03/edev20261103cb2-1368-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/edev/papers/edev20261103cb2-1368-2-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-27T09:47:52+00:00",
+          "bytes": 382322,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1368/2026(02)",
+          "title": "CB(2)1368/2026(02)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/經濟發展事務委員會會議(下午4時30分或在保安事務委員會與經濟發展事務委員會聯席會議結束後10分鐘，以較後者為準。)/2026-11-03/edev20261103cb2-1368-2-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/edev/papers/edev20261103cb2-1368-3-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T07:32:45+00:00",
+          "bytes": 462221,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1368/2026(03)",
+          "title": "CB(2)1368/2026(03)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/經濟發展事務委員會會議(下午4時30分或在保安事務委員會與經濟發展事務委員會聯席會議結束後10分鐘，以較後者為準。)/2026-11-03/edev20261103cb2-1368-3-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/edev/papers/edev20261103cb2-1368-4-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-30T06:11:04+00:00",
+          "bytes": 1172358,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1368/2026(04)",
+          "title": "CB(2)1368/2026(04)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/經濟發展事務委員會會議(下午4時30分或在保安事務委員會與經濟發展事務委員會聯席會議結束後10分鐘，以較後者為準。)/2026-11-03/edev20261103cb2-1368-4-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/edev/minutes/edev20261103.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-13T06:16:12+00:00",
+          "bytes": 1158056,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 172343,
+      "meeting_date": "2026-11-03",
+      "start_time": "2026-11-03T16:45:00",
+      "committee_name": "與控煙措施有關的3項附屬法例小組委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_leg/sc104/agenda/sc10420261103.htm",
+      "venue_name": "會議室2B",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-24",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-03T06:44:14+00:00",
+        "on_site_at_cutoff": false
+      },
+      "agenda_items": [],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_leg/sc104/minutes/sc10420261103.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-13T06:40:48+00:00",
+          "bytes": 1172646,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    }
+  ],
+  "votes_after_cutoff": []
+}

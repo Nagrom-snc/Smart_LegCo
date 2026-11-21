@@ -1,0 +1,205 @@
+{
+  "as_of": "2026-11-16T14:30:00+08:00",
+  "observed_at": "2026-11-21T11:34:14.203941+00:00",
+  "meetings": [
+    {
+      "meet_id": 169750,
+      "meeting_date": "2026-11-16",
+      "start_time": "2026-11-16T10:45:00",
+      "committee_name": "公務員及資助機構員工事務委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/agenda/ps20261116.htm",
+      "venue_name": "會議室3",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-12-07",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-16T01:13:27+00:00",
+        "on_site_at_cutoff": true
+      },
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "自上次會議後發出的資料文件"
+        },
+        {
+          "item_key": "II",
+          "title": "下次會議的討論事項"
+        },
+        {
+          "item_key": "III",
+          "title": "香港生產力促進局的機構管治、資源運用及人力政策"
+        },
+        {
+          "item_key": "IV",
+          "title": "為政府僱員提供家庭友善僱傭措施的最新情況"
+        },
+        {
+          "item_key": "V",
+          "title": "其他事項"
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-16T08:42:48+00:00",
+          "bytes": 129170,
+          "on_site_at_cutoff": false,
+          "role": "agenda_paper",
+          "paper_label": "CB(3)1361/2026(01)",
+          "title": "CB(3)1361/2026(01)",
+          "item_key": "II",
+          "local_path": null
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116-cb3-1361-2-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-16T08:42:48+00:00",
+          "bytes": 58168,
+          "on_site_at_cutoff": false,
+          "role": "agenda_paper",
+          "paper_label": "CB(3)1361/2026(02)",
+          "title": "CB(3)1361/2026(02)",
+          "item_key": "II",
+          "local_path": null
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-3-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-16T08:42:49+00:00",
+          "bytes": 801083,
+          "on_site_at_cutoff": false,
+          "role": "agenda_paper",
+          "paper_label": "CB(3)1361/2026(03)",
+          "title": "CB(3)1361/2026(03)",
+          "item_key": "III",
+          "local_path": null
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-4-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-16T08:42:48+00:00",
+          "bytes": 360854,
+          "on_site_at_cutoff": false,
+          "role": "agenda_paper",
+          "paper_label": "CB(3)1361/2026(04)",
+          "title": "CB(3)1361/2026(04)",
+          "item_key": "IV",
+          "local_path": null
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-5-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-16T08:42:48+00:00",
+          "bytes": 277267,
+          "on_site_at_cutoff": false,
+          "role": "agenda_paper",
+          "paper_label": "CB(3)1361/2026(05)",
+          "title": "CB(3)1361/2026(05)",
+          "item_key": "IV",
+          "local_path": null
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/minutes/ps20261116.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-20T07:22:46+00:00",
+          "bytes": 893158,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 169679,
+      "meeting_date": "2026-11-16",
+      "start_time": "2026-11-16T14:30:00",
+      "committee_name": "政制事務委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/agenda/ca20261116.htm",
+      "venue_name": "會議室1",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-12-07",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-13T03:21:24+00:00",
+        "on_site_at_cutoff": true
+      },
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "自上次會議後發出的資料文件"
+        },
+        {
+          "item_key": "II",
+          "title": "下次會議的討論事項"
+        },
+        {
+          "item_key": "III",
+          "title": "推展愛國主義教育工作的最新進展"
+        },
+        {
+          "item_key": "IV",
+          "title": "其他事項"
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/papers/ca20261116cb2-1500-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-09T10:59:02+00:00",
+          "bytes": 259242,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1500/2026(01)",
+          "title": "CB(2)1500/2026(01)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116cb2-1500-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/papers/ca20261116cb2-1500-2-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-09T10:57:57+00:00",
+          "bytes": 1123532,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1500/2026(02)",
+          "title": "CB(2)1500/2026(02)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116cb2-1500-2-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/papers/ca20261116cb2-1500-3-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-09T10:59:12+00:00",
+          "bytes": 500224,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1500/2026(03)",
+          "title": "CB(2)1500/2026(03)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116cb2-1500-3-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/minutes/ca20261116.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-20T03:49:14+00:00",
+          "bytes": 1132154,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    }
+  ],
+  "votes_after_cutoff": []
+}

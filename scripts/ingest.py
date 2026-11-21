@@ -304,7 +304,7 @@ def write_snapshot(data_dir, day, snapshot):
     return path
 
 
-def run(day, now, data_dir, refresh=None):
+def run(day, now, data_dir, refresh=None, follow=True):
     data_dir = Path(data_dir)
     cutoff = fetch_day.cutoff_for(day)
     if now < cutoff:
@@ -321,7 +321,7 @@ def run(day, now, data_dir, refresh=None):
                 kept, _later = fetch_day.votes_on(meeting_day, run_cutoff)
                 return fetch_day.one_meeting(row, meeting_day, run_cutoff, kept)
 
-        followed = follow_up(conn, day, data_dir, now, refresh)
+        followed = follow_up(conn, day, data_dir, now, refresh) if follow else []
         saved, skipped, failed = download_pdfs(conn, data_dir.parent)
     finally:
         conn.close()
@@ -343,12 +343,17 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description="Run one 14:30 HKT LegCo ingest.")
     parser.add_argument("--date", help="Hong Kong date YYYY-MM-DD. Default: today in Asia/Hong_Kong.")
     parser.add_argument("--data-dir", default=None)
+    parser.add_argument(
+        "--no-follow-up",
+        action="store_true",
+        help="Store this date at its own 14:30 cutoff and do not re-read earlier open meetings.",
+    )
     args = parser.parse_args(argv)
     now = datetime.now(HKT)
     day = datetime.fromisoformat(args.date).date() if args.date else now.date()
     root = Path(__file__).resolve().parents[1]
     data_dir = Path(args.data_dir) if args.data_dir else root / "data"
-    result = run(day, now, data_dir)
+    result = run(day, now, data_dir, follow=not args.no_follow_up)
     print(json.dumps(result, ensure_ascii=False))
     if result.get("download_failures"):
         return 1

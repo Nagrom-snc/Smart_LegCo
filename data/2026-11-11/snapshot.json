@@ -1,0 +1,83 @@
+{
+  "as_of": "2026-11-11T14:30:00+08:00",
+  "observed_at": "2026-11-21T11:30:40.570608+00:00",
+  "meetings": [
+    {
+      "meet_id": 169546,
+      "meeting_date": "2026-11-11",
+      "start_time": "2026-11-11T08:30:00",
+      "committee_name": "人事編制小組委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/fc/esc/agenda/esc20261111.htm",
+      "venue_name": "會議室1",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-12-02",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-19T03:16:29+00:00",
+        "on_site_at_cutoff": false
+      },
+      "agenda_items": [],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/fc/esc/minutes/esc20261111.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-17T03:32:45+00:00",
+          "bytes": 1092087,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 169281,
+      "meeting_date": "2026-11-11",
+      "start_time": "2026-11-11T11:00:00",
+      "committee_name": "立法會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/agenda/cm20261111.htm",
+      "venue_name": "會議廳",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-12-02",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-12T02:51:35+00:00",
+        "on_site_at_cutoff": false
+      },
+      "agenda_items": [],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/floor/cm20261111-confirm-ec.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-17T09:10:45+00:00",
+          "bytes": 17434072,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261111.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-12T08:48:10+00:00",
+          "bytes": 634159,
+          "on_site_at_cutoff": false,
+          "role": "voting_sheet",
+          "paper_label": null,
+          "title": "表決結果",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    }
+  ],
+  "votes_after_cutoff": []
+}

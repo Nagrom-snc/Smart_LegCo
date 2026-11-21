@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-11-10T14:30:00+08:00",
+  "observed_at": "2026-11-21T11:30:36.597769+00:00",
+  "meetings": [
+    {
+      "meet_id": 169174,
+      "meeting_date": "2026-11-10",
+      "start_time": "2026-11-10T14:30:00",
+      "committee_name": "食物安全及環境衞生事務委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/agenda/fseh20261110.htm",
+      "venue_name": "會議室3",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-12-01",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-16T06:22:23+00:00",
+        "on_site_at_cutoff": false
+      },
+      "agenda_items": [],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/minutes/fseh20261110.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-20T07:41:42+00:00",
+          "bytes": 1048798,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    }
+  ],
+  "votes_after_cutoff": []
+}
