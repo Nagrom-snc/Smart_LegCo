@@ -12,7 +12,10 @@ votes_after_cutoff are left out too.
 """
 
 import csv
+import hashlib
 import json
+import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
 
 COLUMNS = (
@@ -29,6 +32,8 @@ COLUMNS = (
     "議案",
     "整體結果",
     "表決時間",
+    "下載時間",
+    "SHA256",
 )
 
 RESULT_LABEL = {"Passed": "通過", "Negatived": "否決"}
@@ -83,6 +88,9 @@ def rows_from(snapshot):
             row["文件名稱"] = doc.get("title") or doc.get("paper_label") or ""
             row["網址"] = doc.get("url") or ""
             row["本地路徑"] = doc.get("local_path") or ""
+            if row["本地路徑"]:
+                row["下載時間"] = doc.get("downloaded_at") or ""
+                row["SHA256"] = doc.get("sha256") or ""
             rows.append(row)
         for motion in meeting.get("motions") or []:
             decision = meeting_base(meeting, clock)
@@ -93,6 +101,67 @@ def rows_from(snapshot):
             decision["表決時間"] = vote_clock(motion.get("vote_time") or "")
             rows.append(decision)
     return rows
+
+
+def sha256_of(path):
+    digest = hashlib.sha256()
+    with Path(path).open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def git_added_at(repo, relpath):
+    proc = subprocess.run(
+        ["git", "log", "--follow", "-M100%", "--diff-filter=A", "--format=%cI", "--", relpath],
+        cwd=repo,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    lines = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
+    return lines[-1] if lines else ""
+
+
+def stamp_downloads(data_dir, freshly_saved=None, now=None):
+    """Fill sha256 and downloaded_at on snapshot documents that have a local PDF.
+
+    A file saved during this run uses `now`. An older file uses the commit that
+    added it. A row with no local file keeps both fields empty.
+    """
+    data_dir = Path(data_dir)
+    repo = data_dir.parent
+    fresh = set(freshly_saved or [])
+    stamped_at = (now or datetime.now(timezone.utc)).isoformat()
+    cache = {}
+    written = 0
+    for snap_path in sorted(data_dir.glob("*/snapshot.json")):
+        snapshot = json.loads(snap_path.read_text(encoding="utf-8"))
+        changed = False
+        for meeting in snapshot.get("meetings") or []:
+            for doc in meeting.get("documents") or []:
+                rel = doc.get("local_path") or ""
+                if not rel or not (repo / rel).is_file():
+                    if doc.get("sha256") or doc.get("downloaded_at"):
+                        doc["sha256"] = None
+                        doc["downloaded_at"] = None
+                        changed = True
+                    continue
+                if rel not in cache:
+                    sha = sha256_of(repo / rel)
+                    when = stamped_at if rel in fresh else git_added_at(repo, rel)
+                    cache[rel] = (sha, when)
+                sha, when = cache[rel]
+                if not when:
+                    when = doc.get("downloaded_at") or ""
+                if doc.get("sha256") != sha or (doc.get("downloaded_at") or "") != when:
+                    doc["sha256"] = sha
+                    doc["downloaded_at"] = when or None
+                    changed = True
+        if changed:
+            snap_path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            written += 1
+    return written
 
 
 def write_meetings_csv(data_dir, out=None):
@@ -111,7 +180,9 @@ def write_meetings_csv(data_dir, out=None):
 
 def main():
     root = Path(__file__).resolve().parents[1]
-    path, count = write_meetings_csv(root / "data")
+    data_dir = root / "data"
+    stamp_downloads(data_dir)
+    path, count = write_meetings_csv(data_dir)
     print(f"{path} {count}")
 
 
