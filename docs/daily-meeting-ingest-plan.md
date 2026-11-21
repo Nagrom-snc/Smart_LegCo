@@ -40,7 +40,7 @@
 
 用第二種。議程解析只寫議程項目和會前文件。表決解析只寫議案。重跑按主鍵更新。
 
-不存每位議員一列。開放數據有議員姓名。這裡要的是議案名稱和結果，所以摺成一筆議案。
+議案仍是一筆。開放數據裡同一議案有每位議員一列，這些列掛在該議案下面，不另開一場會議。CSV 會寫議案的整體結果，也會寫每位議員的投票。
 
 不抽取 PDF 文字。PDF 檔本身要存下來。來源網址仍寫在 `url`。
 
@@ -98,6 +98,8 @@ PDF 的路徑是 `data/` 加 `committee_name`，再加 `meeting_date`，再加�
 
 主鍵是 `meet_id`、`vote_type`、`vote_number`。
 
+議員投票掛在這筆議案上，不是另一項議案。每筆有 `name_ch`、`name_en`、`constituency`、`vote`、`display_order`。主鍵是議案主鍵再加 `name_ch`。資料庫表是 `member_vote`。
+
 11 月 17 日法案委員會議程有「只限委員參閱」而沒有連結的文件，例如 `CB(3)1397/2026(02)`。這一列仍存編號和標題，`url` 留空。
 
 ## 資料在邊界解析
@@ -106,7 +108,7 @@ HTTP 和 HTML 在邊界收成上面的列。邊界之內不再檢查空值。
 
 - `parseMeeting` 讀 Tmeeting 一列，得到 `meeting`。
 - `parseAgenda` 讀議程 HTML 的 `data-unit`，得到 `agenda_item`，以及 `role` 為 `agenda_paper` 的 `document`。以 `/` 開頭的連結補上 `https://www.legco.gov.hk`。
-- `foldVotes` 把同一 `vote_type` 和 `vote_number` 的議員列摺成一筆 `motion`。
+- `foldVotes` 把同一 `vote_type` 和 `vote_number` 的議員列摺成一筆 `motion`，並保留每位議員的姓名、選區和投票。
 - `minutesUrl` 由議程網址和日期推出紀要位址，再請求確認。推不出或不是 200，就留空。
 - `votingSheetUrl` 只對立法會會議試 `counmtg/voting/v` 加日期的 PDF。
 
@@ -132,7 +134,7 @@ HTTP 和 HTML 在邊界收成上面的列。邊界之內不再檢查空值。
 2. 再取出 `status` 仍是 `open`、而且 `follow_up_until` 尚未過去的舊會議。
 3. 對每一場讀 `agenda_url`。upsert 議程項目和 `agenda_paper`。主鍵已在就更新標題和 `url`。已在網站上的 PDF 寫入 `local_path`。
 4. 試紀要位址。截止時間前已在網站上，就 upsert `role` 為 `minutes` 的文件，並把 PDF 寫入同一個日期資料夾。
-5. 讀當日 `vVotingResult`，摺成 `motion`，掛到對得上的 `meet_id`。
+5. 讀當日 `vVotingResult`，摺成 `motion`，保留議員投票，掛到對得上的 `meet_id`。
 6. 立法會會議再試表決 PDF。200 就 upsert `voting_sheet`。
 7. 議程上新出現、又不是上面幾種的連結，用 `later_paper` 插入。
 8. 這一輪存到紀要，就把 `status` 改為 `complete`。`follow_up_until` 已過而仍然沒有紀要，就改為 `expired`。沒有表決的會議也可以 `complete`。事務委員會常常沒有表決。
@@ -144,18 +146,32 @@ HTTP 和 HTML 在邊界收成上面的列。邊界之內不再檢查空值。
 
 ## 會議文件 CSV
 
-`data/meetings.csv` 把已抓取各日的議程文件合成一張表，方便直接打開。它不是第五張資料表。一列是議程上的一份文件，`role` 為 `agenda_paper`。會議紀要和表決結果 PDF 不在這張表。同一份檔在議程上出現兩次，就寫兩列。
+`data/meetings.csv` 把已抓取各日的議程文件和表決合成一張表，方便直接打開。它不是另一張資料表。會議紀要和表決結果 PDF 不在這張表。同一份檔在議程上出現兩次，就寫兩列。截止時間後的表決留在快照的 `votes_after_cutoff`，不寫進 CSV。
 
-欄位如下。
+`紀錄種類` 把列分開。
 
+- `議程文件`：議程上的一份文件，`role` 為 `agenda_paper`。
+- `表決結果`：一項在下午 2 時 30 分前已投完的議案，寫整體結果。
+- `議員表決`：該議案下一位議員的投票。同一議案先寫結果列，再按議員順序寫投票列。
+
+欄位如下。某一類用不到的欄留空。
+
+- `紀錄種類`
 - `日期`
-- `時間`，當日開始時間，寫成 `HH:MM`
+- `時間`，會議開始時間，寫成 `HH:MM`
 - `地點`
 - `委員會名稱`
 - `議程項目`，項目編號加議程上的項目標題
 - `文件名稱`，議程連結上的文字
 - `網址`
 - `本地路徑`。截止時間前未在網站上的 PDF，以及不是 PDF 的連結，留空
+- `表決編號`
+- `議案`
+- `整體結果`，通過或否決
+- `表決時間`，寫成 `HH:MM:SS`
+- `議員`
+- `議員投票`，贊成、反對、棄權、出席或缺席
+- `選區`
 
 來源是 `data/` 下每個 `snapshot.json`。規則是每次抓取都重寫這一份，不另存一日一份。`fetch_day.py` 寫完當日快照後必定重寫它。快照若不是寫在 `data/` 底下，程式會停下來，不讓這輪在沒有更新 CSV 的情況下結束。`python3 scripts/export_meetings_csv.py` 可以單獨再重寫一次。檔案是 UTF-8，開頭有 BOM。議程頁在截止時間後才修改的會議沒有文件列。2026-11-08 沒有會議，所以沒有列。
 
@@ -216,4 +232,4 @@ stateDiagram-v2
 
 ## 這一版不做的事
 
-不抓英文頁。不存議員逐一的表決。不抽取 PDF 文字。不猜第二條紀要路徑。
+不抓英文頁。不抽取 PDF 文字。不猜第二條紀要路徑。

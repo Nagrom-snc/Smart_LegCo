@@ -69,15 +69,15 @@ def meetings_on(day):
 
 def votes_on(day, cutoff_local):
     filt = f"vote_date eq datetime'{day.isoformat()}T00:00:00'"
-    seen = {}
+    grouped = {}
     skip = 0
     while True:
         url = "https://app.legco.gov.hk/vrdb/odata/vVotingResult?" + urllib.parse.urlencode(
             {
                 "$format": "json",
                 "$filter": filt,
-                "$select": "type,vote_number,motion_ch,overall_result,vote_time",
-                "$orderby": "vote_number",
+                "$select": "type,vote_number,motion_ch,overall_result,vote_time,name_ch,name_en,constituency,vote,display_order",
+                "$orderby": "vote_number,display_order",
                 "$skip": str(skip),
                 "$top": "400",
             }
@@ -88,17 +88,29 @@ def votes_on(day, cutoff_local):
             break
         for row in rows:
             key = (row.get("type"), row.get("vote_number"))
-            seen[key] = row
+            bucket = grouped.setdefault(key, {"row": row, "members": []})
+            bucket["members"].append(
+                {
+                    "name_ch": row.get("name_ch"),
+                    "name_en": row.get("name_en"),
+                    "constituency": row.get("constituency"),
+                    "vote": row.get("vote"),
+                    "display_order": row.get("display_order"),
+                }
+            )
         skip += 400
     kept, later = [], []
-    for (vote_type, number), row in sorted(seen.items(), key=lambda item: item[0][1] or 0):
+    for (vote_type, number), bucket in sorted(grouped.items(), key=lambda item: item[0][1] or 0):
+        row = bucket["row"]
         stamp = datetime.fromisoformat(row["vote_time"]).replace(tzinfo=HKT)
+        members = sorted(bucket["members"], key=lambda member: (member.get("display_order") or 0, member.get("name_ch") or ""))
         item = {
             "vote_type": vote_type,
             "vote_number": number,
             "motion_title": row.get("motion_ch"),
             "result": row.get("overall_result"),
             "vote_time": stamp.isoformat(),
+            "members": members,
         }
         (kept if stamp <= cutoff_local else later).append(item)
     return kept, later
