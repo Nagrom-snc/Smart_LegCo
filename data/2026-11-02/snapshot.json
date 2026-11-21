@@ -1,0 +1,317 @@
+{
+  "as_of": "2026-11-02T14:30:00+08:00",
+  "observed_at": "2026-11-21T11:25:52.057430+00:00",
+  "meetings": [
+    {
+      "meet_id": 169022,
+      "meeting_date": "2026-11-02",
+      "start_time": "2026-11-02T14:30:00",
+      "committee_name": "房屋事務委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/agenda/hg20261102.htm",
+      "venue_name": "會議室1",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-23",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-11-02T04:01:50+00:00",
+        "on_site_at_cutoff": true
+      },
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "自上次會議後發出的資料文件"
+        },
+        {
+          "item_key": "II",
+          "title": "下次會議的討論事項"
+        },
+        {
+          "item_key": "III",
+          "title": "房屋局有關樓宇維修監管制度的改革措施"
+        },
+        {
+          "item_key": "IV",
+          "title": "應用創新科技優化公營房屋物業管理工作流程的最新發展"
+        },
+        {
+          "item_key": "V",
+          "title": "其他事項"
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hgcb1-1193-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-26T07:37:37+00:00",
+          "bytes": 1065296,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1193/2026(01)",
+          "title": "CB(1)1193/2026(01)",
+          "item_key": "I",
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hgcb1-1193-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hg20261102cb1-1325-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-30T08:02:17+00:00",
+          "bytes": 336892,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1325/2026(01)",
+          "title": "CB(1)1325/2026(01)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hg20261102cb1-1325-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hg20261102cb1-1325-2-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T02:16:20+00:00",
+          "bytes": 285963,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1325/2026(02)",
+          "title": "CB(1)1325/2026(02)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hg20261102cb1-1325-2-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hg20261102cb1-1370-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-02T02:41:11+00:00",
+          "bytes": 936464,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1370/2026(01)",
+          "title": "CB(1)1370/2026(01)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hg20261102cb1-1370-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hg20261102cb1-1325-3-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T01:38:27+00:00",
+          "bytes": 2325466,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1325/2026(03)",
+          "title": "CB(1)1325/2026(03)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hg20261102cb1-1325-3-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hg20261102cb1-1325-4-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T02:21:03+00:00",
+          "bytes": 620079,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1325/2026(04)",
+          "title": "CB(1)1325/2026(04)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hg20261102cb1-1325-4-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/minutes/hg20261102.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-12T04:23:14+00:00",
+          "bytes": 1255030,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    },
+    {
+      "meet_id": 169117,
+      "meeting_date": "2026-11-02",
+      "start_time": "2026-11-02T16:30:00",
+      "committee_name": "環境事務委員會會議",
+      "agenda_url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/agenda/ea20261102.htm",
+      "venue_name": "會議室3",
+      "meeting_type": "公開會議",
+      "follow_up_until": "2026-11-23",
+      "status": "open",
+      "agenda_page": {
+        "http_status": 200,
+        "last_modified": "2026-10-30T01:48:19+00:00",
+        "on_site_at_cutoff": true
+      },
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "自2026年7月10日會議後發出的資料文件"
+        },
+        {
+          "item_key": "II",
+          "title": "下次會議的討論事項"
+        },
+        {
+          "item_key": "III",
+          "title": "與時並進的優化環境噪音政策措施及《噪音管制(汽車)規例》(第400I章)的修訂建議"
+        },
+        {
+          "item_key": "IV",
+          "title": "《空氣污染管制(船用輕質柴油)規例》(第311Y章)相關修訂建議"
+        },
+        {
+          "item_key": "V",
+          "title": "其他事項"
+        }
+      ],
+      "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/eacb1-852-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-07T04:25:38+00:00",
+          "bytes": 378428,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)852/2026(01)",
+          "title": "CB(1)852/2026(01)",
+          "item_key": "I",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/eacb1-852-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/eacb1-954-1-ec.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-07T04:26:23+00:00",
+          "bytes": 1604745,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)954/2026(01)",
+          "title": "CB(1)954/2026(01)",
+          "item_key": "I",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/eacb1-954-1-ec.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/eacb1-1033-1-ec.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-07T04:27:12+00:00",
+          "bytes": 1646216,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1033/2026(01)",
+          "title": "CB(1)1033/2026(01)",
+          "item_key": "I",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/eacb1-1033-1-ec.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/eacb1-1146-1-ec.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-07T04:28:02+00:00",
+          "bytes": 1395093,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1146/2026(01)",
+          "title": "CB(1)1146/2026(01)",
+          "item_key": "I",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/eacb1-1146-1-ec.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/eacb1-1360-1-ec.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-29T03:51:11+00:00",
+          "bytes": 1690164,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1360/2026(01)",
+          "title": "CB(1)1360/2026(01)",
+          "item_key": "I",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/eacb1-1360-1-ec.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261102cb1-1307-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T09:35:19+00:00",
+          "bytes": 379470,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1307/2026(01)",
+          "title": "CB(1)1307/2026(01)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102cb1-1307-1-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261102cb1-1307-2-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-26T04:01:32+00:00",
+          "bytes": 153932,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1307/2026(02)",
+          "title": "CB(1)1307/2026(02)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102cb1-1307-2-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261102cb1-1307-3-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-26T09:21:38+00:00",
+          "bytes": 455053,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1307/2026(03)",
+          "title": "CB(1)1307/2026(03)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102cb1-1307-3-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261102cb1-1307-4-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-26T04:01:57+00:00",
+          "bytes": 470040,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1307/2026(04)",
+          "title": "CB(1)1307/2026(04)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102cb1-1307-4-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261102cb1-1307-5-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-26T09:22:21+00:00",
+          "bytes": 531322,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1307/2026(05)",
+          "title": "CB(1)1307/2026(05)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102cb1-1307-5-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261102cb1-1307-6-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-26T09:13:30+00:00",
+          "bytes": 396302,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(1)1307/2026(06)",
+          "title": "CB(1)1307/2026(06)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102cb1-1307-6-c.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/minutes/ea20261102.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-12T06:31:16+00:00",
+          "bytes": 1019899,
+          "on_site_at_cutoff": false,
+          "role": "minutes",
+          "paper_label": null,
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": null
+        }
+      ],
+      "motions": []
+    }
+  ],
+  "votes_after_cutoff": []
+}

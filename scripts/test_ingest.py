@@ -20,6 +20,13 @@ class PathTest(unittest.TestCase):
         self.assertEqual(fetch_day.meeting_kind("福利事務委員會會議", "https://www.legco.gov.hk/yr2026/chinese/panels/ws/agenda/ws20261109.htm"), "事務委員會")
         self.assertEqual(fetch_day.meeting_kind("《2026年醫生註冊(修訂)條例草案》委員會會議", "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/agenda/bc10520261109.htm"), "法案委員會")
         self.assertEqual(fetch_day.meeting_kind("內務委員會會議", "https://www.legco.gov.hk/yr2026/chinese/hc/agenda/hc20261106.htm"), "內務委員會")
+        self.assertEqual(
+            fetch_day.meeting_kind(
+                "《2026年印花税(修訂)(第3號)條例草案》委員會會議(下午3時30分或在當天的立法會會議結束後15分鐘，以較後者為準)",
+                "https://www.legco.gov.hk/yr2026/chinese/bc/bc107/agenda/bc10720261119.htm",
+            ),
+            "法案委員會",
+        )
         path = fetch_day.pdf_path(
             "福利事務委員會會議",
             "2026-11-09",

@@ -105,18 +105,28 @@ def votes_on(day, cutoff_local):
 
 
 def meeting_kind(committee_name, agenda_url=""):
-    """Top folder for a meeting. URL path wins; the name covers a missing URL."""
+    """Top folder for a meeting. The agenda URL decides; the name is only a fallback."""
     url = agenda_url or ""
     name = committee_name or ""
-    if "/counmtg/" in url or "立法會會議" in name:
+    if "/counmtg/" in url:
         return "大會"
-    if "/fc/" in url or "財務委員會" in name or "工務小組委員會" in name or "人事編制小組委員會" in name:
+    if "/fc/" in url:
         return "財務委員會"
-    if "/panels/" in url or "事務委員會" in name:
+    if "/panels/" in url:
         return "事務委員會"
-    if "/bc/" in url or "條例草案" in name:
+    if "/bc/" in url:
         return "法案委員會"
-    if "/hc/" in url or "內務委員會" in name or "小組委員會" in name:
+    if "/hc/" in url:
+        return "內務委員會"
+    if "立法會會議" in name:
+        return "大會"
+    if "財務委員會" in name or "工務小組委員會" in name or "人事編制小組委員會" in name:
+        return "財務委員會"
+    if "事務委員會" in name:
+        return "事務委員會"
+    if "條例草案" in name:
+        return "法案委員會"
+    if "內務委員會" in name or "小組委員會" in name:
         return "內務委員會"
     return "其他"
 
