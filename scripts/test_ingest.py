@@ -11,6 +11,24 @@ import fetch_day
 import ingest
 from export_meetings_csv import rows_from
 
+
+class PathTest(unittest.TestCase):
+    def test_kind_follows_the_agenda_url(self):
+        self.assertEqual(fetch_day.meeting_kind("立法會會議", "https://www.legco.gov.hk/yr2026/chinese/counmtg/agenda/cm20261118.htm"), "大會")
+        self.assertEqual(fetch_day.meeting_kind("2026年11月18日立法會會議的延續", "https://www.legco.gov.hk/yr2026/chinese/counmtg/agenda/cm20261118.htm"), "大會")
+        self.assertEqual(fetch_day.meeting_kind("工務小組委員會會議", "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/agenda/pwsc20261118.htm"), "財務委員會")
+        self.assertEqual(fetch_day.meeting_kind("福利事務委員會會議", "https://www.legco.gov.hk/yr2026/chinese/panels/ws/agenda/ws20261109.htm"), "事務委員會")
+        self.assertEqual(fetch_day.meeting_kind("《2026年醫生註冊(修訂)條例草案》委員會會議", "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/agenda/bc10520261109.htm"), "法案委員會")
+        self.assertEqual(fetch_day.meeting_kind("內務委員會會議", "https://www.legco.gov.hk/yr2026/chinese/hc/agenda/hc20261106.htm"), "內務委員會")
+        path = fetch_day.pdf_path(
+            "福利事務委員會會議",
+            "2026-11-09",
+            "https://www.legco.gov.hk/yr2026/chinese/panels/ws/papers/ws20261109cb1-1387-1-c.pdf",
+            True,
+            "https://www.legco.gov.hk/yr2026/chinese/panels/ws/agenda/ws20261109.htm",
+        )
+        self.assertEqual(path, "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-1-c.pdf")
+
 HKT = fetch_day.HKT
 
 
