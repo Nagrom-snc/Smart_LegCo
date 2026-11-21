@@ -82,17 +82,7 @@ def connect(db_path):
             vote_time TEXT,
             PRIMARY KEY (meet_id, vote_type, vote_number)
         );
-        CREATE TABLE IF NOT EXISTS member_vote (
-            meet_id INTEGER NOT NULL,
-            vote_type TEXT NOT NULL,
-            vote_number INTEGER NOT NULL,
-            name_ch TEXT NOT NULL,
-            name_en TEXT,
-            constituency TEXT,
-            vote TEXT,
-            display_order INTEGER,
-            PRIMARY KEY (meet_id, vote_type, vote_number, name_ch)
-        );
+        DROP TABLE IF EXISTS member_vote;
         """
     )
     return conn
@@ -195,33 +185,6 @@ def upsert_meeting(conn, meeting):
                 motion.get("vote_time"),
             ),
         )
-        for member in motion.get("members") or []:
-            name = (member.get("name_ch") or member.get("name_en") or "").strip()
-            if not name:
-                continue
-            conn.execute(
-                """
-                INSERT INTO member_vote (
-                    meet_id, vote_type, vote_number, name_ch, name_en,
-                    constituency, vote, display_order
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                ON CONFLICT(meet_id, vote_type, vote_number, name_ch) DO UPDATE SET
-                    name_en = excluded.name_en,
-                    constituency = excluded.constituency,
-                    vote = excluded.vote,
-                    display_order = excluded.display_order
-                """,
-                (
-                    meeting["meet_id"],
-                    motion.get("vote_type") or "",
-                    motion.get("vote_number") or 0,
-                    name,
-                    member.get("name_en"),
-                    member.get("constituency"),
-                    member.get("vote"),
-                    member.get("display_order"),
-                ),
-            )
     meeting["status"] = status
     return status
 
