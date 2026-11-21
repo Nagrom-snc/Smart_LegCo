@@ -163,7 +163,9 @@
           "paper_label": "CB(3)1362/2026(01)",
           "title": "CB(3)1362/2026(01)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1362-1-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1362-1-c.pdf",
+          "sha256": "cd1fc13ff71d4f6ee57c16fd93d512ff0c61deb1bd3f4ff91b966b7019cab5aa",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc106/papers/bc10620261117cb3-1362-2-c.pdf",
@@ -175,7 +177,9 @@
           "paper_label": "CB(3)1362/2026(02)",
           "title": "CB(3)1362/2026(02)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1362-2-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1362-2-c.pdf",
+          "sha256": "0c39a6564488f6ff86fac8ecff72222d3dd9b1c14e2b9c5c34411a6b272c6619",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc106/papers/bc10620261117cb3-1374-1-c.pdf",
@@ -187,7 +191,9 @@
           "paper_label": "CB(3)1374/2026(01)",
           "title": "CB(3)1374/2026(01)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1374-1-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1374-1-c.pdf",
+          "sha256": "d40288fc1691f3f98fc3ed04e0df184811f864652d51234d5b508ca95ee027b1",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc106#papers-and-reports&cat=d",
@@ -211,7 +217,9 @@
           "paper_label": "CB(3)1333/2026(01)",
           "title": "CB(3)1333/2026(01)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc106cb3-1333-1-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc106cb3-1333-1-c.pdf",
+          "sha256": "3cd5572d5256e2d14414fb27fe521fe3e9faba1371e0c83c563f731a869a5e49",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc106/papers/bc1061117cb3-1397-1-c.pdf",
@@ -223,7 +231,9 @@
           "paper_label": "CB(3)1397/2026(01)",
           "title": "CB(3)1397/2026(01)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc1061117cb3-1397-1-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc1061117cb3-1397-1-c.pdf",
+          "sha256": "04c755a61dc6c6691912409e7f9c4d0bb8acaf35a0914240832163cdc1b70b24",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc106/papers/bc10620261117cb3-1409-1-c.pdf",
@@ -235,7 +245,9 @@
           "paper_label": "CB(3)1409/2026(01)",
           "title": "CB(3)1409/2026(01)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1409-1-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117cb3-1409-1-c.pdf",
+          "sha256": "2e6cec65cf6f947aefc1fe5b3ba2a7d460565814c45f1d844eea54192a19d5a0",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202610021.pdf",
@@ -247,7 +259,9 @@
           "paper_label": "CB(2)1227/2026",
           "title": "CB(2)1227/2026",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/b202610021.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/b202610021.pdf",
+          "sha256": "2471fb66ffa00e5e04e52fbed040e88feb89726e74c225a0365dc969139a2bae",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/brief/adv50811912c_20260930-c.pdf",
@@ -259,7 +273,9 @@
           "paper_label": "檔案編號：ADV 5081/1/91/2C",
           "title": "檔案編號：ADV 5081/1/91/2C",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/adv50811912c_20260930-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/adv50811912c_20260930-c.pdf",
+          "sha256": "08c98f21852cb7698bc9353df9a8dc7979ac0084ede54348674222e7fb964b8b",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261016ls-50-c.pdf",
@@ -271,7 +287,9 @@
           "paper_label": "LS50/2026",
           "title": "LS50/2026",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/hc20261016ls-50-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/hc20261016ls-50-c.pdf",
+          "sha256": "f10f79133c0fe443df9c9d68a0f4570f95aa63fa186e1a797eef70bf89efb4f8",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc106/papers/bc10620261028cb3-1248-2-c.pdf",
@@ -283,7 +301,9 @@
           "paper_label": "CB(3)1248/2026(02)",
           "title": "CB(3)1248/2026(02)",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261028cb3-1248-2-c.pdf"
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261028cb3-1248-2-c.pdf",
+          "sha256": "635ef6472536b0ce38bd695e8c37cc2dc25de7c387a0d62a5de0ea2f18c838d2",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc106#papers-and-reports",

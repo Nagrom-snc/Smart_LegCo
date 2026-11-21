@@ -156,7 +156,9 @@
           "paper_label": "《2026年證券及期貨(修訂)條例草案》",
           "title": "《2026年證券及期貨(修訂)條例草案》",
           "item_key": "III",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/b202610301.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/b202610301.pdf",
+          "sha256": "6ecd035a87535828d31ff6de8f7f50e11d9864d51ee4e49c2c429dc860d3eaa1",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202610302.pdf",
@@ -168,7 +170,9 @@
           "paper_label": "《2026年野生動物保護(修訂)條例草案》",
           "title": "《2026年野生動物保護(修訂)條例草案》",
           "item_key": "III",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/b202610302.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/b202610302.pdf",
+          "sha256": "3861f69d5d1490d98696f7e66db02d8981e218be528f8c29285f013bb153e136",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc05#meetings",
@@ -192,7 +196,9 @@
           "paper_label": "CB(2)1443/2026(01)",
           "title": "CB(2)1443/2026(01)",
           "item_key": "III",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb2-1443-1-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb2-1443-1-c.pdf",
+          "sha256": "9266071d7879f0e1a28e6a87ab74c17e51d32c158afc185c4c687a37fe583cc8",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111cb2-1456-1-c.pdf",
@@ -204,7 +210,9 @@
           "paper_label": "CB(2)1456/2026(01)",
           "title": "CB(2)1456/2026(01)",
           "item_key": "IV",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb2-1456-1-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb2-1456-1-c.pdf",
+          "sha256": "f702c4afc1fc0a7bf4e0a5ddc5b7a682ad908f94c8660bfcbffbcc0d56436d92",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261111cb1-1346-1-c.pdf",
@@ -216,7 +224,9 @@
           "paper_label": "CB(1)1346/2026(01)",
           "title": "CB(1)1346/2026(01)",
           "item_key": "IV",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb1-1346-1-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb1-1346-1-c.pdf",
+          "sha256": "4d1a0bcbdcc2b94545ce3dbee05986cf53a885d546a6c45b2590205d18633c10",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261111cb1-1403-1-c.pdf",
@@ -228,7 +238,9 @@
           "paper_label": "CB(1)1403/2026",
           "title": "CB(1)1403/2026",
           "item_key": "IV",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb1-1403-1-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111cb1-1403-1-c.pdf",
+          "sha256": "27055839eeb0017ba05cf9bdad30025f51f1f0a4a0dcd23339ca8db7ce9e9a2a",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/subleg/negative/2026ln143-c.pdf",
@@ -240,7 +252,9 @@
           "paper_label": "《2026年防止賄賂條例(修訂附表1)令》",
           "title": "《2026年防止賄賂條例(修訂附表1)令》",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/2026ln143-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/2026ln143-c.pdf",
+          "sha256": "d0421a7c2cfa1788b14553369a2357ca3425c7978ca6145c4c9370f071ad75d4",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/subleg/negative/2026ln144-c.pdf",
@@ -252,7 +266,9 @@
           "paper_label": "《2026年證券及期貨(場外衍生工具交易——結算及備存紀錄責任和中央對手方的指定)(修訂)規則》",
           "title": "《2026年證券及期貨(場外衍生工具交易——結算及備存紀錄責任和中央對手方的指定)(修訂)規則》",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/2026ln144-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/2026ln144-c.pdf",
+          "sha256": "8d280ba01730d5b02a561a2c10bce8cea20c45870fd04d40fa5bf48279633321",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111-sp098-c.pdf",
@@ -264,7 +280,9 @@
           "paper_label": "環境及自然保育基金2025-2026年度受託人報告書(包括審計署署長報告及財務報表)",
           "title": "環境及自然保育基金2025-2026年度受託人報告書(包括審計署署長報告及財務報表)",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp098-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp098-c.pdf",
+          "sha256": "0cced1af3faf4cdfbfcac8427dd38d337341f5d2f5d76d8add32acef3326b8eb",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111-sp099-c.pdf",
@@ -276,7 +294,9 @@
           "paper_label": "香港科技園公司2025-2026年報(包括獨立核數師報告及綜合財務報表)",
           "title": "香港科技園公司2025-2026年報(包括獨立核數師報告及綜合財務報表)",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp099-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp099-c.pdf",
+          "sha256": "13c025885537cf4d07dc6a37aedb7d7b8c4c29ed0177030dfae680dc5b604770",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111-sp100-ec.pdf",
@@ -288,7 +308,9 @@
           "paper_label": "香港生產力促進局2025-26年報、獨立核數師報告及財務報告",
           "title": "香港生產力促進局2025-26年報、獨立核數師報告及財務報告",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp100-ec.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp100-ec.pdf",
+          "sha256": "5148a20d8bcd1248ec90dd81773327dd271ab46e899e5d38191bc7b9fe0fcc5e",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111-sp101-ec.pdf",
@@ -300,7 +322,9 @@
           "paper_label": "競爭事務委員會2025/26年報(包括財務報表及獨立核數師報告)",
           "title": "競爭事務委員會2025/26年報(包括財務報表及獨立核數師報告)",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp101-ec.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp101-ec.pdf",
+          "sha256": "72cb43959fbbe72cd671d3e3b71ee0bfc2a387145f6b763f2f7f25229e517acf",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111-sp102-c.pdf",
@@ -312,7 +336,9 @@
           "paper_label": "2026-27年度第一季核准開支預算所作出的修改報告《公共財政條例》：第8(8)(b)條",
           "title": "2026-27年度第一季核准開支預算所作出的修改報告《公共財政條例》：第8(8)(b)條",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp102-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261111-sp102-c.pdf",
+          "sha256": "69a08968fd6023a21a2ab630091f8d55e1a17ba690ee1149a35485fee24ef0cc",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/general/chinese/sec/reports/c_2025.pdf",
@@ -324,7 +350,9 @@
           "paper_label": "立法會行政管理委員會2024-2025年度事務報告(包括帳目報表及審計署署長報告)",
           "title": "立法會行政管理委員會2024-2025年度事務報告(包括帳目報表及審計署署長報告)",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/c_2025.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/c_2025.pdf",
+          "sha256": "4780cc31d68f1634e641571c46723e7bf2e5fb702e425957ee1bdd56b6cb956e",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hccb2-1441-c.pdf",
@@ -336,7 +364,9 @@
           "paper_label": "內務委員會有關研究附屬法例及其他文書的第19/2026號報告",
           "title": "內務委員會有關研究附屬法例及其他文書的第19/2026號報告",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/hccb2-1441-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/hccb2-1441-c.pdf",
+          "sha256": "9741c497da94d2eead5c01186e7579565570c6a59d71ec6dbccf09f6387adaac",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc05/reports/bc0520261111cb1-1386-c.pdf",
@@ -348,7 +378,9 @@
           "paper_label": "《北部都會區發展條例草案》委員會報告",
           "title": "《北部都會區發展條例草案》委員會報告",
           "item_key": "I",
-          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/bc0520261111cb1-1386-c.pdf"
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/bc0520261111cb1-1386-c.pdf",
+          "sha256": "cf106fdd051ef4cf56cef3b38dd4ee60b6ccbe923117987098f738c532cca2dc",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/floor/cm20261112-confirm-ec.pdf",

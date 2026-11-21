@@ -9,7 +9,7 @@ from pathlib import Path
 
 import fetch_day
 import ingest
-from export_meetings_csv import rows_from
+from export_meetings_csv import rows_from, sha256_of, stamp_downloads
 
 
 class PathTest(unittest.TestCase):
@@ -69,6 +69,42 @@ def meeting(meet_id, day, status="open", minutes=False, local_path=None):
     }
 
 
+class StampTest(unittest.TestCase):
+    def test_hash_is_filled_only_when_the_pdf_exists(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            data = root / "data"
+            day = data / "2026-11-09"
+            day.mkdir(parents=True)
+            pdf = data / "事務委員會" / "福利事務委員會會議" / "2026-11-09" / "ws.pdf"
+            pdf.parent.mkdir(parents=True)
+            pdf.write_bytes(b"%PDF-1.4 stamp")
+            rel = "data/事務委員會/福利事務委員會會議/2026-11-09/ws.pdf"
+            snapshot = {
+                "meetings": [
+                    {
+                        "documents": [
+                            {"role": "agenda_paper", "local_path": rel, "title": "有檔"},
+                            {"role": "agenda_paper", "local_path": None, "title": "無檔"},
+                        ]
+                    }
+                ]
+            }
+            (day / "snapshot.json").write_text(json.dumps(snapshot), encoding="utf-8")
+            when = datetime(2026, 11, 21, 12, 0, tzinfo=HKT)
+            stamp_downloads(data, freshly_saved=[rel], now=when)
+            stored = json.loads((day / "snapshot.json").read_text(encoding="utf-8"))
+            docs = stored["meetings"][0]["documents"]
+            self.assertEqual(docs[0]["sha256"], sha256_of(pdf))
+            self.assertEqual(docs[0]["downloaded_at"], "2026-11-21T12:00:00+08:00")
+            self.assertIsNone(docs[1].get("sha256"))
+            rows = rows_from(stored)
+            self.assertEqual(rows[0]["SHA256"], docs[0]["sha256"])
+            self.assertEqual(rows[0]["下載時間"], "2026-11-21T12:00:00+08:00")
+            self.assertEqual(rows[1]["SHA256"], "")
+            self.assertEqual(rows[1]["下載時間"], "")
+
+
 class CsvRowsTest(unittest.TestCase):
     def test_decision_row_follows_the_paper_without_members(self):
         snapshot = {
@@ -109,6 +145,9 @@ class CsvRowsTest(unittest.TestCase):
         self.assertEqual(rows[1]["議案"], "二讀")
         self.assertEqual(rows[1]["整體結果"], "通過")
         self.assertEqual(rows[1]["表決時間"], "14:20:10")
+        self.assertEqual(rows[0]["下載時間"], "")
+        self.assertEqual(rows[0]["SHA256"], "")
+        self.assertEqual(rows[1]["SHA256"], "")
 
 
 class IngestTest(unittest.TestCase):

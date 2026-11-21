@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import fetch_day
-from export_meetings_csv import write_meetings_csv
+from export_meetings_csv import stamp_downloads, write_meetings_csv
 
 HKT = fetch_day.HKT
 DB_NAME = "legco.sqlite"
@@ -71,6 +71,8 @@ def connect(db_path):
             local_path TEXT,
             item_key TEXT,
             on_site_at_cutoff INTEGER,
+            sha256 TEXT,
+            downloaded_at TEXT,
             PRIMARY KEY (meet_id, role, doc_key)
         );
         CREATE TABLE IF NOT EXISTS motion (
@@ -85,6 +87,11 @@ def connect(db_path):
         DROP TABLE IF EXISTS member_vote;
         """
     )
+    columns = {row[1] for row in conn.execute("PRAGMA table_info(document)")}
+    if "sha256" not in columns:
+        conn.execute("ALTER TABLE document ADD COLUMN sha256 TEXT")
+    if "downloaded_at" not in columns:
+        conn.execute("ALTER TABLE document ADD COLUMN downloaded_at TEXT")
     return conn
 
 
@@ -143,15 +150,17 @@ def upsert_meeting(conn, meeting):
             """
             INSERT INTO document (
                 meet_id, role, doc_key, paper_label, title, url, local_path,
-                item_key, on_site_at_cutoff
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                item_key, on_site_at_cutoff, sha256, downloaded_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(meet_id, role, doc_key) DO UPDATE SET
                 paper_label = excluded.paper_label,
                 title = excluded.title,
                 url = COALESCE(excluded.url, document.url),
                 local_path = COALESCE(excluded.local_path, document.local_path),
                 item_key = excluded.item_key,
-                on_site_at_cutoff = excluded.on_site_at_cutoff
+                on_site_at_cutoff = excluded.on_site_at_cutoff,
+                sha256 = COALESCE(excluded.sha256, document.sha256),
+                downloaded_at = COALESCE(excluded.downloaded_at, document.downloaded_at)
             """,
             (
                 meeting["meet_id"],
@@ -163,6 +172,8 @@ def upsert_meeting(conn, meeting):
                 doc.get("local_path"),
                 doc.get("item_key"),
                 1 if doc.get("on_site_at_cutoff") else 0,
+                doc.get("sha256"),
+                doc.get("downloaded_at"),
             ),
         )
     for motion in meeting.get("motions") or []:
@@ -325,6 +336,7 @@ def run(day, now, data_dir, refresh=None, follow=True):
         saved, skipped, failed = download_pdfs(conn, data_dir.parent)
     finally:
         conn.close()
+    stamp_downloads(data_dir, freshly_saved=saved, now=datetime.now(timezone.utc))
     csv_path, csv_rows = write_meetings_csv(data_dir)
     return {
         "skipped": False,

@@ -46,7 +46,9 @@
           "paper_label": "CB(1)1435/2026(01)",
           "title": "CB(1)1435/2026(01)",
           "item_key": "I",
-          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113cb1-1435-1-c.pdf"
+          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113cb1-1435-1-c.pdf",
+          "sha256": "2ae6a32cb0e7a7fcc148d11a8beda05894b13bb1ede35d721da3115c6ccf8d8d",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/papers/dev20261113cb1-1435-2-c.pdf",
@@ -58,7 +60,9 @@
           "paper_label": "CB(1)1435/2026(02)",
           "title": "CB(1)1435/2026(02)",
           "item_key": "II",
-          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113cb1-1435-2-c.pdf"
+          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113cb1-1435-2-c.pdf",
+          "sha256": "bcef90586358a86fee5bb8f0f625357a354e3011520716fbbdd08fb8d48f06ed",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/papers/dev20261113cb1-1435-3-c.pdf",
@@ -70,7 +74,9 @@
           "paper_label": "CB(1)1435/2026(03)",
           "title": "CB(1)1435/2026(03)",
           "item_key": "III",
-          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113cb1-1435-3-c.pdf"
+          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113cb1-1435-3-c.pdf",
+          "sha256": "4c974f74e9e82dc9b048bde20a988c55060d9946d1f56c19176d6f1590308fd6",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/minutes/dev20261113.pdf",
@@ -135,7 +141,9 @@
           "paper_label": "CB(3)1346/2026(01)",
           "title": "CB(3)1346/2026(01)",
           "item_key": "II",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-1-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-1-c.pdf",
+          "sha256": "beef106cb7102ec1d26e98e3fb43e652dbb5b3385bab283b7534efa840372c36",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/papers/hs20261113cb3-1346-2-c.pdf",
@@ -147,7 +155,9 @@
           "paper_label": "CB(3)1346/2026(02)",
           "title": "CB(3)1346/2026(02)",
           "item_key": "II",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-2-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-2-c.pdf",
+          "sha256": "1620d8d6fddcc03d20aba2b6002575fc9b67515ec723fa12e210048583ee029f",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/papers/hs20261113cb3-1346-3-c.pdf",
@@ -159,7 +169,9 @@
           "paper_label": "CB(3)1346/2026(03)",
           "title": "CB(3)1346/2026(03)",
           "item_key": "III",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-3-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-3-c.pdf",
+          "sha256": "66be42d794549ec3fd7d8116aa5a4a7c69396db67869068063e356988d66b870",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/papers/hs20261113cb3-1384-1-c.pdf",
@@ -171,7 +183,9 @@
           "paper_label": "CB(3)1384/2026(01)",
           "title": "CB(3)1384/2026(01)",
           "item_key": "III",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1384-1-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1384-1-c.pdf",
+          "sha256": "32d37838bcd2f066ec1142a88cafe53f28fb77317ee8b11cc366440817ef9b63",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/papers/hs20261113cb3-1346-4-c.pdf",
@@ -183,7 +197,9 @@
           "paper_label": "CB(3)1346/2026(04)",
           "title": "CB(3)1346/2026(04)",
           "item_key": "IV",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-4-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-4-c.pdf",
+          "sha256": "66c7b3908e9688371e3de733702741d030a0309242927818445e759154c9a19a",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/papers/hscb3-1274-1-c.pdf",
@@ -195,7 +211,9 @@
           "paper_label": "CB(3)1274/2026(01)",
           "title": "CB(3)1274/2026(01)",
           "item_key": "IV",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hscb3-1274-1-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hscb3-1274-1-c.pdf",
+          "sha256": "41ed27fff048b02ef6961a6605e2f24c8e3605dc3993d30a00d2c818eeec72f3",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/papers/hs20261113cb3-1346-5-c.pdf",
@@ -207,7 +225,9 @@
           "paper_label": "CB(3)1346/2026(05)",
           "title": "CB(3)1346/2026(05)",
           "item_key": "IV",
-          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-5-c.pdf"
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113cb3-1346-5-c.pdf",
+          "sha256": "4cf751f9d4fd46a0e24dfc48999954ab849d98ea1de23b4e72d951f71d8edcde",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hs/minutes/hs20261113.pdf",
@@ -280,7 +300,9 @@
           "paper_label": "《2026年證券及期貨(修訂)條例草案》",
           "title": "《2026年證券及期貨(修訂)條例草案》",
           "item_key": "II",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202610301.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202610301.pdf",
+          "sha256": "6ecd035a87535828d31ff6de8f7f50e11d9864d51ee4e49c2c429dc860d3eaa1",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113ls-60-c.pdf",
@@ -292,7 +314,9 @@
           "paper_label": "LS60/2026",
           "title": "LS60/2026",
           "item_key": "II",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113ls-60-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113ls-60-c.pdf",
+          "sha256": "a3f9ff3d4054c7a66a24320acafc8fe8ca13c16f3ff20a323e5e98b7fc00bb76",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202610302.pdf",
@@ -304,7 +328,9 @@
           "paper_label": "《2026年野生動物保護(修訂)條例草案》",
           "title": "《2026年野生動物保護(修訂)條例草案》",
           "item_key": "II",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202610302.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202610302.pdf",
+          "sha256": "3861f69d5d1490d98696f7e66db02d8981e218be528f8c29285f013bb153e136",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113ls-61-c.pdf",
@@ -316,7 +342,9 @@
           "paper_label": "LS61/2026",
           "title": "LS61/2026",
           "item_key": "II",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113ls-61-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113ls-61-c.pdf",
+          "sha256": "55892f8d5a806f891f8233b40b790cf73c6a846fa16a114a4746edb6a02149df",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113ls-62-c.pdf",
@@ -328,7 +356,9 @@
           "paper_label": "LS62/2026",
           "title": "LS62/2026",
           "item_key": "II",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113ls-62-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113ls-62-c.pdf",
+          "sha256": "542d23fcc5ac23c917eb42420cf537e502f71923fb05222b1c4580b0fa48c555",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hccb2-1513-c.pdf",
@@ -340,7 +370,9 @@
           "paper_label": "CB(2)1513/2026",
           "title": "CB(2)1513/2026",
           "item_key": "III",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hccb2-1513-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hccb2-1513-c.pdf",
+          "sha256": "704e0b8f767efcb2c64637d96c587447e517113d059706b5b4288e04298c032d",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/council/questions.html?2026&d=2026-11-18",
@@ -364,7 +396,9 @@
           "paper_label": "《2026年電子交易(修訂)條例草案》",
           "title": "《2026年電子交易(修訂)條例草案》",
           "item_key": "III",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611061.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611061.pdf",
+          "sha256": "5bd061023ecc6fde6d448d1d5b7f5aee6790965753503527731f23e626e5460d",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/council/bills.html?bill_key=10009&session=2026",
@@ -412,7 +446,9 @@
           "paper_label": "根據《基本法》第七十三條第(七)項及《香港終審法院條例》第7A條動議有關委任香港終審法院其他普通法適用地區非‍常任法官的擬議決議案",
           "title": "根據《基本法》第七十三條第(七)項及《香港終審法院條例》第7A條動議有關委任香港終審法院其他普通法適用地區非‍常任法官的擬議決議案",
           "item_key": "III",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261118cb2-1446-1-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261118cb2-1446-1-c.pdf",
+          "sha256": "c1337ef719c8ae3448109ccb7273bbfd9fa4ac2c0475fc6b897043464ca62c53",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261111cb1-1347-1-c.pdf",
@@ -424,7 +460,9 @@
           "paper_label": "\"深化國際教育樞紐建設，構建國際升學首選地\"議案",
           "title": "\"深化國際教育樞紐建設，構建國際升學首選地\"議案",
           "item_key": "III",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261111cb1-1347-1-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261111cb1-1347-1-c.pdf",
+          "sha256": "657da2a77a9df4662b6919dc4c331f5aeb320c7fb36623dc6685989580b7565f",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261118cb1-1401-1-c.pdf",
@@ -436,7 +474,9 @@
           "paper_label": "\"全面提升大學科研成果轉化能力，全力支援北都大學城'政、產、學、研、投'協同發展\"議案",
           "title": "\"全面提升大學科研成果轉化能力，全力支援北都大學城'政、產、學、研、投'協同發展\"議案",
           "item_key": "III",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261118cb1-1401-1-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261118cb1-1401-1-c.pdf",
+          "sha256": "5aa63258e9eb5203725d6b87bce3e93815cbefcce872c073672d5cd3ec2eaac9",
+          "downloaded_at": "2026-11-19T22:51:12+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/council/questions.html?2026&d=2026-11-25",
@@ -460,7 +500,9 @@
           "paper_label": "《2026年強制性公積金計劃(修訂)條例草案》",
           "title": "《2026年強制性公積金計劃(修訂)條例草案》",
           "item_key": "IV",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611131.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611131.pdf",
+          "sha256": "10be906429c7fc5353afda1b5ed97020784b44196fb01c2f119ebaa96b89079e",
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202611132.pdf",
@@ -472,7 +514,9 @@
           "paper_label": "《2026年性罪行法例(修訂)條例草案》",
           "title": "《2026年性罪行法例(修訂)條例草案》",
           "item_key": "IV",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611132.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611132.pdf",
+          "sha256": "c5e1653cc88857e1e022383365117d80e07942e75badf23b62365cd1e8b31dbe",
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202611133.pdf",
@@ -484,7 +528,9 @@
           "paper_label": "《藥物及醫療器械監督管理中心條例草案》",
           "title": "《藥物及醫療器械監督管理中心條例草案》",
           "item_key": "IV",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611133.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611133.pdf",
+          "sha256": "84f4a8f9dc467372ee0eefab0d03b2f2c3967bba2baf70798f65ad83d86d401c",
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202611134.pdf",
@@ -496,7 +542,9 @@
           "paper_label": "《2026年教育(修訂)條例草案》",
           "title": "《2026年教育(修訂)條例草案》",
           "item_key": "IV",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611134.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/b202611134.pdf",
+          "sha256": "2e83f0532b710ef008a846bf860fc0b7e3536b1db6067571d447f174aacd299a",
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/council/bills.html?bill_key=10020&session=2026",
@@ -520,7 +568,9 @@
           "paper_label": "\"檢視醫療保險成效，提升醫療服務效率\"議案",
           "title": "\"檢視醫療保險成效，提升醫療服務效率\"議案",
           "item_key": "IV",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261125cb1-1440-1-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261125cb1-1440-1-c.pdf",
+          "sha256": "f15ee58ef5c8bea031d055667d660a869265b44a793643872107ccd49c400529",
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261125cb1-1441-1-c.pdf",
@@ -532,7 +582,9 @@
           "paper_label": "\"把握香港參與國家航天發展及北都大學城建設機遇，全方位助力香港航天科技發展邁向新高度\"議案",
           "title": "\"把握香港參與國家航天發展及北都大學城建設機遇，全方位助力香港航天科技發展邁向新高度\"議案",
           "item_key": "IV",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261125cb1-1441-1-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/cm20261125cb1-1441-1-c.pdf",
+          "sha256": "2a2cbbc7a77112bbe9d887231c9b2acaa8daf7af7010d3e31f5c4beefd30e034",
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113cb1-1428-c.pdf",
@@ -544,7 +596,9 @@
           "paper_label": "CB(1)1428/2026",
           "title": "CB(1)1428/2026",
           "item_key": "V",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb1-1428-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb1-1428-c.pdf",
+          "sha256": "845c0d83b28bed1fc0e4704e41e008185411568ab4fd19ce1022bdbf66c16af0",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113cb2-1511-c.pdf",
@@ -556,7 +610,9 @@
           "paper_label": "CB(2)1511/2026",
           "title": "CB(2)1511/2026",
           "item_key": "V",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb2-1511-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb2-1511-c.pdf",
+          "sha256": "4d19b6775637dd64015a347f671339bff07fd4c120091ad44694adb84590f53a",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113cb3-1366-c.pdf",
@@ -568,7 +624,9 @@
           "paper_label": "CB(3)1366/2026",
           "title": "CB(3)1366/2026",
           "item_key": "V",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb3-1366-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb3-1366-c.pdf",
+          "sha256": "6e7763ee31ccf14f9a373470ab907716b3cf4b8351070e1f2cf10fa0c93ca81b",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113cb2-1510-c.pdf",
@@ -580,7 +638,9 @@
           "paper_label": "CB(2)1510/2026",
           "title": "CB(2)1510/2026",
           "item_key": "V",
-          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb2-1510-c.pdf"
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb2-1510-c.pdf",
+          "sha256": "523e1a7c894f23983b474512722ba2b8da899f10c6520526b3d2259f7b22d4ba",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20261113cb2-1512-c.pdf",
@@ -641,7 +701,9 @@
           "paper_label": "2026年10月21日",
           "title": "2026年10月21日",
           "item_key": "I",
-          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/pwsc20261021.pdf"
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/pwsc20261021.pdf",
+          "sha256": "00736ebce986acbba86bc7f2c8bad11ccd9fd9ce05d0fbfe0ea328bc6b7d6dda",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/fc/papers/f26-39c.pdf",
@@ -653,7 +715,9 @@
           "paper_label": "FCR(2026-27)39",
           "title": "FCR(2026-27)39",
           "item_key": "I",
-          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/f26-39c.pdf"
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/f26-39c.pdf",
+          "sha256": "6f8d4bb9a1eb542cf523212e294999822d6f69aeaa9181748a384bca05a72e5b",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/papers/P26-16-c.pdf",
@@ -665,7 +729,9 @@
           "paper_label": "PWSC(2026-27)16",
           "title": "PWSC(2026-27)16",
           "item_key": "I",
-          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/P26-16-c.pdf"
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/P26-16-c.pdf",
+          "sha256": "3e0f15e32fe528f3a6e4f821c2cdec288d23882ff2655757bdfe45baee73c607",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/minutes/dev20260714.pdf",
@@ -677,7 +743,9 @@
           "paper_label": "會議紀要",
           "title": "會議紀要",
           "item_key": "I",
-          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/dev20260714.pdf"
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/dev20260714.pdf",
+          "sha256": "3d78188c43c086fd3b18ee91493a0148239001df25763c16710e85a714238ac0",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/papers/dev20260714cb1-1256-1-c.pdf",
@@ -689,7 +757,9 @@
           "paper_label": "補充資料",
           "title": "補充資料",
           "item_key": "I",
-          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/dev20260714cb1-1256-1-c.pdf"
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/dev20260714cb1-1256-1-c.pdf",
+          "sha256": "f27e18bf979fca2c288a4b4311eaca88c9c002c9ca5a1fb7da1b8ba835cf701b",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/minutes/pwsc20261021.pdf",
@@ -701,7 +771,9 @@
           "paper_label": "會議紀要",
           "title": "會議紀要",
           "item_key": "I",
-          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/pwsc20261021.pdf"
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/pwsc20261021.pdf",
+          "sha256": "00736ebce986acbba86bc7f2c8bad11ccd9fd9ce05d0fbfe0ea328bc6b7d6dda",
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/fc/minutes/fc20261113.pdf",
