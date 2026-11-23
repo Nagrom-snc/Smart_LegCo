@@ -14,6 +14,7 @@ import email.utils
 import json
 import re
 import ssl
+import time
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -28,12 +29,19 @@ UA = {"User-Agent": "SmartLegCo/fetch-day"}
 
 def get(url, method="GET"):
     req = urllib.request.Request(url, method=method, headers=UA)
-    try:
-        with urllib.request.urlopen(req, timeout=60, context=CTX) as res:
-            body = res.read() if method == "GET" else b""
-            return res.status, res.headers, body
-    except urllib.error.HTTPError as err:
-        return err.code, err.headers, b""
+    delay = 2
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=60, context=CTX) as res:
+                body = res.read() if method == "GET" else b""
+                return res.status, res.headers, body
+        except urllib.error.HTTPError as err:
+            return err.code, err.headers, b""
+        except urllib.error.URLError:
+            if attempt == 3:
+                raise
+            time.sleep(delay)
+            delay *= 2
 
 
 def clean(html):

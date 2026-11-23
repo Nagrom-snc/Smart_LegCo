@@ -73,60 +73,70 @@
           "http_status": 200,
           "last_modified": "2026-11-20T08:09:56+00:00",
           "bytes": 194884,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(1)1464/2026(01)",
           "title": "CB(1)1464/2026(01)",
           "item_key": "II",
-          "local_path": null
+          "local_path": "data/事務委員會/人力事務委員會會議/2026-11-20/mp20261120cb1-1464-1-c.pdf",
+          "sha256": "4f538dbbabbc243991871b3d8ae1386d40586afb3c6dd6b670ad4630a2fcb51a",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/mp/papers/mp20261120cb1-1464-2-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-20T08:09:57+00:00",
           "bytes": 1058400,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(1)1464/2026(02)",
           "title": "CB(1)1464/2026(02)",
           "item_key": "III",
-          "local_path": null
+          "local_path": "data/事務委員會/人力事務委員會會議/2026-11-20/mp20261120cb1-1464-2-c.pdf",
+          "sha256": "34a5f8b6ec60aff4ecbb52f6713a7b960db1998679b8af721fa0de5a34fc6f30",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/mp/papers/mp20261120cb1-1464-3-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-20T08:09:56+00:00",
           "bytes": 615244,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(1)1464/2026(03)",
           "title": "CB(1)1464/2026(03)",
           "item_key": "III",
-          "local_path": null
+          "local_path": "data/事務委員會/人力事務委員會會議/2026-11-20/mp20261120cb1-1464-3-c.pdf",
+          "sha256": "c2018d1ec8618d88771a6137b37f9580c162915e642d10bf44ba74bd6f8cd9e6",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/mp/papers/mp20261120cb1-1464-4-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-20T08:09:57+00:00",
           "bytes": 1496098,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(1)1464/2026(04)",
           "title": "CB(1)1464/2026(04)",
           "item_key": "IV",
-          "local_path": null
+          "local_path": "data/事務委員會/人力事務委員會會議/2026-11-20/mp20261120cb1-1464-4-c.pdf",
+          "sha256": "fe7cc2ecc05daf4abede8ccee857b16550f5ea2453c3e526c769b5a5356f5727",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/mp/papers/mp20261120cb1-1464-5-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-20T08:09:56+00:00",
           "bytes": 588983,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(1)1464/2026(05)",
           "title": "CB(1)1464/2026(05)",
           "item_key": "IV",
-          "local_path": null
+          "local_path": "data/事務委員會/人力事務委員會會議/2026-11-20/mp20261120cb1-1464-5-c.pdf",
+          "sha256": "f8a47b0ab45cfd1fc7c7f2f0be49c72e381b460035dad3d7c44991d373fc016d",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/mp/minutes/mp20261120.pdf",

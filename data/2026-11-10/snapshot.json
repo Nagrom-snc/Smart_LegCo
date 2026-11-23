@@ -11,25 +11,118 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-01",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-16T06:22:23+00:00",
-        "on_site_at_cutoff": false
+        "on_site_at_cutoff": true
       },
-      "agenda_items": [],
+      "agenda_items": [
+        {
+          "item_key": "I",
+          "title": "自上次會議後發出的資料文件"
+        },
+        {
+          "item_key": "II",
+          "title": "下次會議的討論事項"
+        },
+        {
+          "item_key": "III",
+          "title": "打擊冷氣機滴水工作"
+        },
+        {
+          "item_key": "IV",
+          "title": "香港第二次總膳食研究最新進展"
+        },
+        {
+          "item_key": "V",
+          "title": "其他事項"
+        }
+      ],
       "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/papers/fseh20261110cb2-1444-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-03T11:22:00+00:00",
+          "bytes": 218339,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1444/2026(01)",
+          "title": "CB(2)1444/2026(01)",
+          "item_key": "II",
+          "local_path": "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-11-10/fseh20261110cb2-1444-1-c.pdf",
+          "sha256": "4d9b0cfb5cccde982e85458d1144ff7aa4f8785160d2bd85af6704c9e9ef42bf",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/papers/fseh20261110cb2-1444-2-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-04T09:52:15+00:00",
+          "bytes": 176066,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1444/2026(02)",
+          "title": "CB(2)1444/2026(02)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-11-10/fseh20261110cb2-1444-2-c.pdf",
+          "sha256": "4f35ca8d0407441e774c2ecbe80a2a50d9dd128fe1aa7d66762ec9112ea7d8e8",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/papers/fseh20261110cb2-1444-3-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-04T10:54:40+00:00",
+          "bytes": 495613,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1444/2026(03)",
+          "title": "CB(2)1444/2026(03)",
+          "item_key": "III",
+          "local_path": "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-11-10/fseh20261110cb2-1444-3-c.pdf",
+          "sha256": "a6b67995ee36ed5a8da2f9c5d4fc5a21df222e5956cae8628d12e1f4e41fbdfc",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/papers/fseh20261110cb2-1444-4-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-03T11:22:40+00:00",
+          "bytes": 510373,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1444/2026(04)",
+          "title": "CB(2)1444/2026(04)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-11-10/fseh20261110cb2-1444-4-c.pdf",
+          "sha256": "f8467f2dcbfa3d29b8669d7ab730e76c100941aa678f2a6935fdb0ca3cba5e7c",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/papers/fseh20261110cb2-1444-5-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-04T10:55:06+00:00",
+          "bytes": 442539,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "CB(2)1444/2026(05)",
+          "title": "CB(2)1444/2026(05)",
+          "item_key": "IV",
+          "local_path": "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-11-10/fseh20261110cb2-1444-5-c.pdf",
+          "sha256": "5afb4e9a7532c51534aada4ce11d368e387700d5a7f5df0cf4928448dc920f92",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/minutes/fseh20261110.pdf",
           "http_status": 200,
           "last_modified": "2026-11-20T07:41:42+00:00",
           "bytes": 1048798,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-11-10/fseh20261110.pdf",
+          "sha256": "f97513264555c990a41434f7bd698f8a0c8870914fdd33b7377806f9d0dfb57a",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []

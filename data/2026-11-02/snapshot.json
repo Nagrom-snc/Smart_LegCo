@@ -11,7 +11,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-11-23",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-02T04:01:50+00:00",
@@ -129,12 +129,14 @@
           "http_status": 200,
           "last_modified": "2026-11-12T04:23:14+00:00",
           "bytes": 1255030,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/房屋事務委員會會議/2026-11-02/hg20261102.pdf",
+          "sha256": "c366bea3f3b6eb7ef3886bb1d8eb8104cd5878095168e63073e00e86c57cc8dd",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
@@ -148,7 +150,7 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-11-23",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-10-30T01:48:19+00:00",
@@ -336,12 +338,14 @@
           "http_status": 200,
           "last_modified": "2026-11-12T06:31:16+00:00",
           "bytes": 1019899,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/環境事務委員會會議/2026-11-02/ea20261102.pdf",
+          "sha256": "07bfb4dc321cf21c96ae9d51e2c053a2100b496219b308ce2206c60f6650afe0",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []

@@ -11,7 +11,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-04",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-13T00:35:55+00:00",
@@ -83,12 +83,14 @@
           "http_status": 200,
           "last_modified": "2026-11-19T06:50:39+00:00",
           "bytes": 1588829,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/發展事務委員會特別會議/2026-11-13/dev20261113.pdf",
+          "sha256": "169dffd32f03ef30a54d9dba6ceebfa893d9a389c2d2785946ad8f8ce780d8c4",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
@@ -102,7 +104,7 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-04",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-12T06:44:53+00:00",
@@ -234,12 +236,14 @@
           "http_status": 200,
           "last_modified": "2026-11-19T01:37:11+00:00",
           "bytes": 1268300,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/衞生事務委員會會議/2026-11-13/hs20261113.pdf",
+          "sha256": "b4043451d7d4f6b4b8eb82a80022cb6538c15d3e1f374d7f905518c6b39f48e9",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
@@ -253,7 +257,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-04",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-13T01:50:30+00:00",
@@ -647,24 +651,28 @@
           "http_status": 200,
           "last_modified": "2026-11-18T10:10:17+00:00",
           "bytes": 441219,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(2)1512/2026",
           "title": "CB(2)1512/2026",
           "item_key": "VI",
-          "local_path": null
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113cb2-1512-c.pdf",
+          "sha256": "666576b47556e61638ac2222f071966d60a1e0335c1c3a47e5645ce0d366213a",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/minutes/hc20261113.pdf",
           "http_status": 200,
           "last_modified": "2026-11-19T09:35:28+00:00",
           "bytes": 696183,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-13/hc20261113.pdf",
+          "sha256": "2b08b6a6364b28b36a993cf7fa7757b2376fd2b880474798ee00e501a15e77ad",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
@@ -678,7 +686,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-04",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-12T03:10:40+00:00",
@@ -780,12 +788,14 @@
           "http_status": 200,
           "last_modified": "2026-11-19T09:14:17+00:00",
           "bytes": 365489,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/財務委員會/財務委員會會議(或介乎下午2時45分至3時正之間的較早時間)/2026-11-13/fc20261113.pdf",
+          "sha256": "947445a9cb8dd28c4f2d22efcfbd4b36d92980b6e642f58f6e84028c1fe12cbb",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []

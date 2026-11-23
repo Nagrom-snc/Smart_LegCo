@@ -11,7 +11,7 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-07",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-16T01:13:27+00:00",
@@ -45,72 +45,84 @@
           "http_status": 200,
           "last_modified": "2026-11-16T08:42:48+00:00",
           "bytes": 129170,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(3)1361/2026(01)",
           "title": "CB(3)1361/2026(01)",
           "item_key": "II",
-          "local_path": null
+          "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-1-c.pdf",
+          "sha256": "91c96cddd3657e660be2266b00aa4e341fc29a33e4bb067c068729a486f97b0e",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116-cb3-1361-2-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-16T08:42:48+00:00",
           "bytes": 58168,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(3)1361/2026(02)",
           "title": "CB(3)1361/2026(02)",
           "item_key": "II",
-          "local_path": null
+          "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116-cb3-1361-2-c.pdf",
+          "sha256": "6771e638a9b287c825630c73cc8240efc3a76fd9531199fffe0faaf4ec105b73",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-3-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-16T08:42:49+00:00",
           "bytes": 801083,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(3)1361/2026(03)",
           "title": "CB(3)1361/2026(03)",
           "item_key": "III",
-          "local_path": null
+          "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-3-c.pdf",
+          "sha256": "003a7b8c3bdc44b3cc46efe2736b23d707fa42736d89e26dd318505f10a9ec3f",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-4-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-16T08:42:48+00:00",
           "bytes": 360854,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(3)1361/2026(04)",
           "title": "CB(3)1361/2026(04)",
           "item_key": "IV",
-          "local_path": null
+          "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-4-c.pdf",
+          "sha256": "02b908bca78010ebcb1d2bee39f50a3639a5b08d81b658b0752d2e48ef017e94",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-5-c.pdf",
           "http_status": 200,
           "last_modified": "2026-11-16T08:42:48+00:00",
           "bytes": 277267,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "agenda_paper",
           "paper_label": "CB(3)1361/2026(05)",
           "title": "CB(3)1361/2026(05)",
           "item_key": "IV",
-          "local_path": null
+          "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-5-c.pdf",
+          "sha256": "34ca3def43cef671dad81abafb1ee2e08d7a46bc192625553c6f9baa927eed77",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/minutes/ps20261116.pdf",
           "http_status": 200,
           "last_modified": "2026-11-20T07:22:46+00:00",
           "bytes": 893158,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116.pdf",
+          "sha256": "fc1f47f0c8b918c4ad55b99b7764fb2c653ad4296d24ede96db6967ef5030b4a",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
@@ -124,7 +136,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-07",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-13T03:21:24+00:00",
@@ -196,12 +208,14 @@
           "http_status": 200,
           "last_modified": "2026-11-20T03:49:14+00:00",
           "bytes": 1132154,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116.pdf",
+          "sha256": "5b528ca12aa158f7eaeb9a9843682a190fbc6e8c6f09d4e711df911f14f5a0f1",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
