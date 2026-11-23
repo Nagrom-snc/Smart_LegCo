@@ -1,0 +1,70 @@
+name: Daily ingest
+
+on:
+  schedule:
+    # 14:30 Asia/Hong_Kong. GitHub schedules use UTC and may start late.
+    - cron: "30 6 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Hong Kong date YYYY-MM-DD. Leave empty for today in Asia/Hong_Kong."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ingest
+        id: ingest
+        continue-on-error: true
+        run: |
+          set +e
+          if [ -n "${{ inputs.date }}" ]; then
+            python3 scripts/ingest.py --date "${{ inputs.date }}" | tee /tmp/ingest.json
+          else
+            python3 scripts/ingest.py | tee /tmp/ingest.json
+          fi
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INGEST_EXIT: ${{ steps.ingest.outputs.exit_code }}
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          set -eu
+          if [ -n "$INPUT_DATE" ]; then
+            day="$INPUT_DATE"
+          else
+            day="$(TZ=Asia/Hong_Kong date +%F)"
+          fi
+          branch="ingest/${day}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit "${INGEST_EXIT:-0}"
+          fi
+          git commit -m "ingest: ${day} 14:30 HKT"
+          git push --force-with-lease -u origin "$branch"
+          if gh pr view "$branch" --json url --jq .url >/dev/null 2>&1; then
+            gh pr comment "$branch" --body "Updated the ${day} ingest. Ingest exit code: ${INGEST_EXIT:-0}."
+          else
+            gh pr create --base main --head "$branch" \
+              --title "ingest: ${day} 14:30 HKT" \
+              --body "Daily LegCo ingest for ${day} at 14:30 Asia/Hong_Kong. Ingest exit code: ${INGEST_EXIT:-0}."
+          fi
+          exit "${INGEST_EXIT:-0}"

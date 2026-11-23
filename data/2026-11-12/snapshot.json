@@ -11,7 +11,7 @@
       "venue_name": "會議廳",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-03",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-12T02:51:35+00:00",
@@ -387,12 +387,14 @@
           "http_status": 200,
           "last_modified": "2026-11-17T09:10:44+00:00",
           "bytes": 2018382,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/大會/2026年11月11日立法會會議的延續/2026-11-12/cm20261112-confirm-ec.pdf",
+          "sha256": "dd9e46984b21fc2a71eb0a94bdcf253641fbd00ac3cc7f87f403a643ed09334c",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261112.pdf",
@@ -456,6 +458,34 @@
           "motion_title": "延展8項與實施業權註冊制度有關的附屬法例的修訂期限的擬議決議案",
           "result": "Passed",
           "vote_time": "2026-11-12T13:30:31+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 8,
+          "motion_title": "陳學鋒議員對梁文廣議員的「優化公營房屋政策，促進市民向上流動」議案作出的修正案",
+          "result": "Negatived",
+          "vote_time": "2026-11-12T16:34:02+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 9,
+          "motion_title": "縮短點名表決響鐘時間的議案",
+          "result": "Passed",
+          "vote_time": "2026-11-12T16:35:26+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 10,
+          "motion_title": "林偉江議員對梁文廣議員的「優化公營房屋政策，促進市民向上流動」議案作出的修正案",
+          "result": "Negatived",
+          "vote_time": "2026-11-12T16:37:13+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 11,
+          "motion_title": "梁文廣議員「優化公營房屋政策，促進市民向上流動」議案",
+          "result": "Negatived",
+          "vote_time": "2026-11-12T16:39:51+08:00"
         }
       ]
     }

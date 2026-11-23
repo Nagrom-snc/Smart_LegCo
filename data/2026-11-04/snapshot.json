@@ -11,25 +11,100 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-11-25",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-10T08:33:14+00:00",
-        "on_site_at_cutoff": false
+        "on_site_at_cutoff": true
       },
-      "agenda_items": [],
+      "agenda_items": [
+        {
+          "item_key": "II",
+          "title": "873CL 元朗大旗嶺的工地平整及基礎設施工程及874CL 元朗十八鄉的工地平整及基礎設施工程"
+        }
+      ],
       "documents": [
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/papers/P26-17-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T03:17:21+00:00",
+          "bytes": 7002643,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "PWSC(2026-27)17",
+          "title": "PWSC(2026-27)17",
+          "item_key": null,
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-04/P26-17-c.pdf",
+          "sha256": "80c3bc0b0a787ec148e20860788cd1c69093e4bf95a7ed495d79becd42cf480c",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/minutes/fseh20261013.pdf",
+          "http_status": 200,
+          "last_modified": "2026-11-04T05:53:56+00:00",
+          "bytes": 1097305,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "會議紀要",
+          "title": "會議紀要",
+          "item_key": null,
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-04/fseh20261013.pdf"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/papers/P26-18-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T03:17:42+00:00",
+          "bytes": 24091988,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "PWSC(2026-27)18",
+          "title": "PWSC(2026-27)18",
+          "item_key": "II",
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-04/P26-18-c.pdf",
+          "sha256": "2434d83378b2fb2da88b4962dfd2fb0230ee4caa348f3995c2c096b07873d4d7",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/minutes/hg20260706.pdf",
+          "http_status": 200,
+          "last_modified": "2026-07-17T08:41:53+00:00",
+          "bytes": 1169266,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "會議紀要",
+          "title": "會議紀要",
+          "item_key": "II",
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-04/hg20260706.pdf",
+          "sha256": "e2d34c5c8174790b8beffe9516a99fc7358bc0c000396b375c413a37dadd8ac6",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
+        {
+          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/hg/papers/hg20260706cb1-1328-1-c.pdf",
+          "http_status": 200,
+          "last_modified": "2026-10-28T03:42:27+00:00",
+          "bytes": 2438435,
+          "on_site_at_cutoff": true,
+          "role": "agenda_paper",
+          "paper_label": "補充資料",
+          "title": "補充資料",
+          "item_key": "II",
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-04/hg20260706cb1-1328-1-c.pdf",
+          "sha256": "6a90aae316745998c5a289a8f368f966fcdcb0fddb97c9f2cec320891a7fd1b9",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+        },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/minutes/pwsc20261104.pdf",
           "http_status": 200,
           "last_modified": "2026-11-16T04:16:53+00:00",
           "bytes": 1225425,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-04/pwsc20261104.pdf",
+          "sha256": "a38646492eb31691b53b038d6ad41fa42c674c962621a00e40bd8491f766beb1",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": []
@@ -43,7 +118,7 @@
       "venue_name": "會議廳",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-11-25",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-04T03:45:18+00:00",
@@ -321,24 +396,28 @@
           "http_status": 200,
           "last_modified": "2026-11-17T09:33:01+00:00",
           "bytes": 8667067,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/大會/立法會會議/2026-11-04/cm20261104-confirm-ec.pdf",
+          "sha256": "3600c738e9f6ae5f6f267dfdb0e60e060831910422a5ecfd10d96020af4ecc88",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261104.pdf",
           "http_status": 200,
           "last_modified": "2026-11-05T05:04:21+00:00",
           "bytes": 391813,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "voting_sheet",
           "paper_label": null,
           "title": "表決結果",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/大會/立法會會議/2026-11-04/v20261104.pdf",
+          "sha256": "2e60528a7e6311f67bba247308ce8cb70d7e8dd0658ecdccd7572b45da3402bf",
+          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
         }
       ],
       "motions": [
@@ -348,6 +427,90 @@
           "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 二讀",
           "result": "Passed",
           "vote_time": "2026-11-04T14:26:49+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 2,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 全體委員會審議 - 第5至7、9、10、13至18、20至22、24及26至28條納入條例草案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:32:18+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 3,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 全體委員會審議 - 財經事務及庫務局局長的修正案 - 第1及2條、第2部的標題、第2部第1分部的標題、第3及4條、第2部第2分部的標題、第8、11、12、19、23、25及29條，以及刪去第3及4部的標題",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:32:59+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 4,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 全體委員會審議 - 經修正的第1及2條、第2部的標題、第2部第1分部的標題、第3及4條、第2部第2分部的標題、第8、11、12、19、23、25及29條納入條例草案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:33:43+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 5,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 全體委員會審議 - 財經事務及庫務局局長的修正案 - 第3條前新次分部的標題、第19及25條前新分部的標題、新訂的第30條前新部的標題及新訂的第30至34條，予以二讀",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:35:48+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 6,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 全體委員會審議 - 財經事務及庫務局局長的修正案 - 條例草案增補第3條前新次分部的標題、第19及25條前新分部的標題、新訂的第30條前新部的標題及新訂的第30至34條",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:36:43+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 7,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 本會採納財經事務及庫務局局長作出報告的議案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:37:43+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 8,
+          "motion_title": "《2026年税務(修訂)(加密資產申報框架及經修訂的共同匯報標準)條例草案》 - 三讀",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:38:45+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 9,
+          "motion_title": "延展《2026年古物及古蹟(古蹟及歷史建築物的宣布)(綜合)(修訂)(第2號)公告》的修訂期限的擬議決議案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T14:39:54+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 10,
+          "motion_title": "黃永威議員對方國珊議員的「打擊圍標，推動圍標行為刑事化」議案作出的修正案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T18:29:21+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 11,
+          "motion_title": "葉傲冬議員對方國珊議員就「打擊圍標，推動圍標行為刑事化」所提，經黃永威議員修正的議案，作出的修正案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T18:29:55+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 12,
+          "motion_title": "陳穎欣議員對方國珊議員就「打擊圍標，推動圍標行為刑事化」所提，經黃永威議員及葉傲冬議員修正的議案，作出的修正案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T18:30:32+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 13,
+          "motion_title": "方國珊議員動議，經黃永威議員、葉傲冬議員及陳穎欣議員修正的「打擊圍標，推動圍標行為刑事化」議案",
+          "result": "Passed",
+          "vote_time": "2026-11-04T18:32:30+08:00"
         }
       ]
     }
