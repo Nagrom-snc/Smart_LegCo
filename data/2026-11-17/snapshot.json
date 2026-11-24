@@ -11,7 +11,7 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-08",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-16T09:25:44+00:00",
@@ -52,7 +52,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117cb2-1517-1-c.pdf",
           "sha256": "d7a7c7571c8e708cd004606412571987eab027b9cda002f1b62907ad315b85e3",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ci/papers/ci20261117cb2-1570-1-c.pdf",
@@ -66,7 +66,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117cb2-1570-1-c.pdf",
           "sha256": "d71abfd379217e6904faabd21f4f220c9229d1619abaa6d7ca157691c12cfa72",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ci/papers/ci20261117cb2-1517-2-c.pdf",
@@ -80,7 +80,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117cb2-1517-2-c.pdf",
           "sha256": "926a5a8558f7587ee5386f02d5988c80f321789fce905992dfd24883ef6cb50d",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ci/papers/ci20261117cb2-1517-3-c.pdf",
@@ -94,7 +94,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117cb2-1517-3-c.pdf",
           "sha256": "bc1133061887f6e447de672c86ba9c1d114bb492ebdd5b27b6cf91912edae8a9",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ci/papers/ci20261117cb2-1517-4-c.pdf",
@@ -108,7 +108,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117cb2-1517-4-c.pdf",
           "sha256": "4f25476c53cd7b88eb6cc3d8a99829cb4a95eb2c6f85fe48354f527be3cfa1f9",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ci/papers/ci20261117cb2-1517-5-c.pdf",
@@ -122,19 +122,21 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117cb2-1517-5-c.pdf",
           "sha256": "f5800cbb9e6a46d6665058fe512bb2b6ddc39a14ae5c15793de178234f80875f",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ci/minutes/ci20261117.pdf",
           "http_status": 200,
           "last_modified": "2026-11-23T11:42:05+00:00",
           "bytes": 1169257,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/工商及創新科技事務委員會會議/2026-11-17/ci20261117.pdf",
+          "sha256": "88278b2820f0658208990515340533b23e16a3020faea695951999dd4a794b95",
+          "downloaded_at": "2026-11-24T12:23:25.384656+00:00"
         }
       ],
       "motions": []
@@ -148,7 +150,7 @@
       "venue_name": "會議室2B",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-08",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-17T04:12:52+00:00",
@@ -334,12 +336,14 @@
           "http_status": 200,
           "last_modified": "2026-11-23T11:10:14+00:00",
           "bytes": 1038091,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/法案委員會/《2026年調解(修訂)條例草案》委員會會議/2026-11-17/bc10620261117.pdf",
+          "sha256": "7852b169b7386c23ed6d893b0220fea7c85aaee89f47714088562dba499f1766",
+          "downloaded_at": "2026-11-24T12:23:25.384656+00:00"
         }
       ],
       "motions": []
