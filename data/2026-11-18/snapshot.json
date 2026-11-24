@@ -11,72 +11,27 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-09",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
-        "last_modified": "2026-11-16T08:29:14+00:00",
-        "on_site_at_cutoff": true
+        "last_modified": "2026-11-24T07:39:25+00:00",
+        "on_site_at_cutoff": false
       },
-      "agenda_items": [
-        {
-          "item_key": "I",
-          "title": "852CL 新田科技城發展; 484RO 建立三寶樹濕地保育公園及470DS 建造新田淨水設施"
-        }
-      ],
+      "agenda_items": [],
       "documents": [
         {
-          "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/papers/P26-19-c.pdf",
-          "http_status": 200,
-          "last_modified": "2026-11-13T06:39:35+00:00",
-          "bytes": 49924891,
-          "on_site_at_cutoff": true,
-          "role": "agenda_paper",
-          "paper_label": "PWSC(2026-27)19",
-          "title": "PWSC(2026-27)19",
-          "item_key": "I",
-          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-18/P26-19-c.pdf",
-          "sha256": "ccf53c390719528abe7cfe6df30e22807c44a75faf31dc92466eda9cc0ba04e3",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
-        },
-        {
-          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/minutes/dev20261027.pdf",
-          "http_status": 200,
-          "last_modified": "2026-11-06T06:59:59+00:00",
-          "bytes": 1318905,
-          "on_site_at_cutoff": true,
-          "role": "agenda_paper",
-          "paper_label": "會議紀要",
-          "title": "會議紀要",
-          "item_key": "I",
-          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-18/dev20261027.pdf",
-          "sha256": "0d7b1f51067fe5fef92893fa6eb21ed1f08b2f101d153c7539d06796c9f8b09e",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
-        },
-        {
-          "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/papers/dev20261027cb1-1469-1-c.pdf",
-          "http_status": 200,
-          "last_modified": "2026-11-16T03:33:22+00:00",
-          "bytes": 969294,
-          "on_site_at_cutoff": true,
-          "role": "agenda_paper",
-          "paper_label": "補充資料",
-          "title": "補充資料",
-          "item_key": "I",
-          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-18/dev20261027cb1-1469-1-c.pdf",
-          "sha256": "1e66bbfbee88141f3b438718690e02c02177144cca3c05ee2c0c926c596649ee",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
-        },
-        {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/minutes/pwsc20261118.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
-          "on_site_at_cutoff": false,
+          "http_status": 200,
+          "last_modified": "2026-11-24T02:56:45+00:00",
+          "bytes": 1162896,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/財務委員會/工務小組委員會會議/2026-11-18/pwsc20261118.pdf",
+          "sha256": "a178cf4f37f20d188c63974bd5f6482a45324e20a2c7b7638c5c6d684331d1ad",
+          "downloaded_at": "2026-11-24T12:23:25.384656+00:00"
         }
       ],
       "motions": []
@@ -487,7 +442,7 @@
           "item_key": null,
           "local_path": "data/大會/立法會會議/2026-11-18/cm20261118-confirm-ec.pdf",
           "sha256": "4c5e4611e44be4feaa4d79418da27b710513a46cef98e363287a63b0c07caa29",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261118.pdf",
@@ -501,7 +456,7 @@
           "item_key": null,
           "local_path": "data/大會/立法會會議/2026-11-18/v20261118.pdf",
           "sha256": "f4975bbe662b4ecf32e697d3767a7fe2e111d11a795ae0052bc89f98083b37e5",
-          "downloaded_at": "2026-11-23T21:53:14.347135+00:00"
+          "downloaded_at": "2026-11-23T22:17:20+00:00"
         }
       ],
       "motions": [
