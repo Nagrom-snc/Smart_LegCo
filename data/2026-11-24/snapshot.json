@@ -207,7 +207,7 @@
           "paper_label": "CB(2)1307/2026",
           "title": "CB(2)1307/2026",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年税務(修訂)(知識產權開支的税項扣除)條例草案》委員會會議/2026-11-24/b202610162.pdf",
+          "local_path": "data/大會/立法會會議/2026-10-16/b202610162.pdf",
           "sha256": "26823db7b65e5cd2cd09a188ac25f7e4fc175d3e5207d880839f0bc7d0ed598a",
           "downloaded_at": "2026-11-24T12:49:07+00:00"
         },
@@ -221,7 +221,7 @@
           "paper_label": "CEDB CR 06/18/23",
           "title": "CEDB CR 06/18/23",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年税務(修訂)(知識產權開支的税項扣除)條例草案》委員會會議/2026-11-24/cedbcr061823_20261014-c.pdf",
+          "local_path": "data/大會/立法會會議/2026-11-24/cedbcr061823_20261014-c.pdf",
           "sha256": "5fcb6e186227d2fb2365c8685c791be9230d811274e261d79722899fd80b1e02",
           "downloaded_at": "2026-11-24T12:49:07+00:00"
         },
@@ -235,7 +235,7 @@
           "paper_label": "LS57/2026",
           "title": "LS57/2026",
           "item_key": "I",
-          "local_path": "data/法案委員會/《2026年税務(修訂)(知識產權開支的税項扣除)條例草案》委員會會議/2026-11-24/hc20261030ls-57-c.pdf",
+          "local_path": "data/內務委員會/內務委員會會議/2026-10-30/hc20261030ls-57-c.pdf",
           "sha256": "3164ba44d18722cbb7d79279402f6d502628c9cd4e31d416f5e6c6c6c0bee0d3",
           "downloaded_at": "2026-11-24T12:49:07+00:00"
         },
@@ -346,7 +346,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-1-c.pdf",
           "sha256": "6b8c233c08f5e095946f52c1563ed581339a9d0b679d4d97b4fe1d0b4f32740e",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-2-c.pdf",
@@ -360,7 +360,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-2-c.pdf",
           "sha256": "285e32643a9dd9d30049bad839fe8759081ae88efea7c797774fb53896127ff5",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-3-c.pdf",
@@ -374,7 +374,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-3-c.pdf",
           "sha256": "681f18bf985371b08312172c4ee025c1d37b0ee450e39bd7925b20ba485a6529",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-4-c.pdf",
@@ -388,7 +388,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-4-c.pdf",
           "sha256": "dd1df8297a11a1f434c5b3309222c969a5e4a0d06e90425cc6fc441ccc1afc24",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-5-c.pdf",
@@ -402,7 +402,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-5-c.pdf",
           "sha256": "cb073151bc5038716dae8918d95ab0931d75a696c0f492942305fe58a1c203cb",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-6-c.pdf",
@@ -416,7 +416,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-6-c.pdf",
           "sha256": "629643384aca7b5de6e0f14ddcf486311c76c36d735ae5573f9e7d0452d1486d",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-7-c.pdf",
@@ -430,7 +430,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-7-c.pdf",
           "sha256": "d87fd6a5ef61fce497f1fb88d63841dc9384b38b6c453154036bd03ce1937de5",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-8-c.pdf",
@@ -444,7 +444,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-8-c.pdf",
           "sha256": "b72dae98721e3aedf6298543c1709198c993533f7c323b15d9299ab12bdd0845",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/papers/ea20261124cb1-1479-9-c.pdf",
@@ -458,7 +458,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/環境事務委員會會議/2026-11-24/ea20261124cb1-1479-9-c.pdf",
           "sha256": "d45706859c6e2045fde0c79bd23672674b310c04d381d098b21beb6475d6fc2e",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-25T17:40:16+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ea/minutes/ea20261124.pdf",

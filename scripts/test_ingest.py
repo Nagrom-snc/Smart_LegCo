@@ -35,6 +35,36 @@ class PathTest(unittest.TestCase):
             "https://www.legco.gov.hk/yr2026/chinese/panels/ws/agenda/ws20261109.htm",
         )
         self.assertEqual(path, "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-1-c.pdf")
+        quoted = fetch_day.pdf_path(
+            "經濟發展事務委員會會議(下午4時30分或在保安事務委員會與經濟發展事務委員會聯席會議結束後10分鐘，以較後者為準。)",
+            "2026-11-03",
+            "https://www.legco.gov.hk/yr2026/chinese/panels/edev/papers/edev20261103.pdf",
+            True,
+            "https://www.legco.gov.hk/yr2026/chinese/panels/edev/agenda/edev20261103.htm",
+            root=Path("/tmp/legco-pdf-path-empty"),
+        )
+        self.assertEqual(quoted, "data/事務委員會/經濟發展事務委員會會議/2026-11-03/edev20261103.pdf")
+        borrowed = fetch_day.pdf_path(
+            "工務小組委員會會議",
+            "2026-11-04",
+            "https://www.legco.gov.hk/yr2026/chinese/panels/fseh/minutes/fseh20261013.pdf",
+            True,
+            "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/agenda/pwsc20261104.htm",
+            root=Path("/tmp/legco-pdf-path-empty"),
+        )
+        self.assertEqual(
+            borrowed,
+            "data/事務委員會/食物安全及環境衞生事務委員會會議/2026-10-13/fseh20261013.pdf",
+        )
+        continued = fetch_day.pdf_path(
+            "2026年11月11日立法會會議的延續",
+            "2026-11-12",
+            "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261111-sp099-c.pdf",
+            True,
+            "https://www.legco.gov.hk/yr2026/chinese/counmtg/agenda/cm20261111.htm",
+            root=Path("/tmp/legco-pdf-path-empty"),
+        )
+        self.assertEqual(continued, "data/大會/立法會會議/2026-11-11/cm20261111-sp099-c.pdf")
 
 HKT = fetch_day.HKT
 

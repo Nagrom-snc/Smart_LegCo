@@ -139,13 +139,123 @@ def meeting_kind(committee_name, agenda_url=""):
     return "其他"
 
 
-def pdf_path(committee_name, meeting_date, url, ready, agenda_url=""):
-    path = urllib.parse.urlparse(url).path
+# Longer fragments are matched first. A paper lives under the committee that
+# published it, not under every meeting that links to it.
+HOMES = (
+    ("/hc/sub_leg/sc104/", "內務委員會", "與控煙措施有關的3項附屬法例小組委員會會議", "sc104"),
+    ("/hc/sub_leg/sc56/", "內務委員會", "與實施業權註冊制度有關的8項附屬法例小組委員會會議", "sc56"),
+    ("/hc/sub_com/hs01/", "內務委員會", "研究“生態+旅遊”事宜小組委員會會議", "hs01"),
+    ("/hc/sub_com/hs51/", "內務委員會", "發展新質生產力小組委員會會議", "hs51"),
+    ("/hc/sub_com/hs52/", "內務委員會", "人工智能及機械人技術發展事宜小組委員會會議", "hs52"),
+    ("/hc/", "內務委員會", "內務委員會會議", "hc"),
+    ("/fc/pwsc/", "財務委員會", "工務小組委員會會議", "pwsc"),
+    ("/fc/esc/", "財務委員會", "人事編制小組委員會會議", "esc"),
+    ("/fc/", "財務委員會", "財務委員會會議", "fc"),
+    ("/panels/se/", "事務委員會", "保安事務委員會和經濟發展事務委員會聯席會議", "se"),
+    ("/panels/ajls/", "事務委員會", "司法及法律事務委員會會議", "ajls"),
+    ("/panels/ca/", "事務委員會", "政制事務委員會會議", "ca"),
+    ("/panels/ci/", "事務委員會", "工商及創新科技事務委員會會議", "ci"),
+    ("/panels/dev/", "事務委員會", "發展事務委員會會議", "dev"),
+    ("/panels/ea/", "事務委員會", "環境事務委員會會議", "ea"),
+    ("/panels/ed/", "事務委員會", "教育事務委員會會議", "ed"),
+    ("/panels/edev/", "事務委員會", "經濟發展事務委員會會議", "edev"),
+    ("/panels/fa/", "事務委員會", "財經事務委員會會議", "fa"),
+    ("/panels/fseh/", "事務委員會", "食物安全及環境衞生事務委員會會議", "fseh"),
+    ("/panels/ha/", "事務委員會", "民政及文化體育事務委員會會議", "ha"),
+    ("/panels/hg/", "事務委員會", "房屋事務委員會會議", "hg"),
+    ("/panels/hs/", "事務委員會", "衞生事務委員會會議", "hs"),
+    ("/panels/itb/", "事務委員會", "資訊科技及廣播事務委員會會議", "itb"),
+    ("/panels/mp/", "事務委員會", "人力事務委員會會議", "mp"),
+    ("/panels/ps/", "事務委員會", "公務員及資助機構員工事務委員會會議", "ps"),
+    ("/panels/tp/", "事務委員會", "交通事務委員會會議", "tp"),
+    ("/panels/ws/", "事務委員會", "福利事務委員會會議", "ws"),
+    ("/bc/bc105/", "法案委員會", "《2026年醫生註冊(修訂)條例草案》委員會會議", "bc105"),
+    ("/bc/bc106/", "法案委員會", "《2026年調解(修訂)條例草案》委員會會議", "bc106"),
+    ("/bc/bc107/", "法案委員會", "《2026年印花税(修訂)(第3號)條例草案》委員會會議", "bc107"),
+    ("/bc/bc52/", "法案委員會", "《2026年税務(修訂)(知識產權開支的税項扣除)條例草案》委員會會議", "bc52"),
+    ("/counmtg/", "大會", "立法會會議", "cm"),
+    ("/bills/", "大會", "立法會會議", "b"),
+    ("/subleg/", "大會", "立法會會議", ""),
+    ("/brief/", "大會", "立法會會議", ""),
+    ("/sec/", "大會", "立法會會議", ""),
+)
+
+
+def stable_committee(name):
+    name = re.sub(r"[（(].*?[）)]", "", name or "").strip()
+    name = name.replace("特別會議", "會議")
+    if "延續" in name:
+        return "立法會會議"
+    return name or "其他"
+
+
+def match_home(url):
+    path = urllib.parse.urlparse(url or "").path
+    for fragment, kind, committee, code in HOMES:
+        if fragment in path:
+            return kind, committee, code
+    report = re.search(r"/bc/([a-z0-9]+)/reports/", path)
+    if report:
+        return "大會", "立法會會議", report.group(1)
+    return None
+
+
+def date_after_code(filename, code):
+    if not code:
+        return None
+    found = re.search(re.escape(code) + r"(20\d{2})(\d{2})(\d{2})", filename or "", re.I)
+    if not found:
+        return None
+    year, month, day = int(found.group(1)), int(found.group(2)), int(found.group(3))
+    try:
+        datetime(year, month, day)
+    except ValueError:
+        return None
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+
+def agenda_day(agenda_url):
+    found = re.search(r"(20\d{2})(\d{2})(\d{2})\.htm", agenda_url or "")
+    if not found:
+        return None
+    year, month, day = int(found.group(1)), int(found.group(2)), int(found.group(3))
+    try:
+        datetime(year, month, day)
+    except ValueError:
+        return None
+    return f"{year:04d}-{month:02d}-{day:02d}"
+
+
+def find_existing(kind, committee, filename, root):
+    base = Path(root) / "data" / kind / committee
+    if not base.is_dir():
+        return None
+    matches = sorted(path.relative_to(root).as_posix() for path in base.glob(f"*/{filename}") if path.is_file())
+    return matches[0] if matches else None
+
+
+def pdf_path(committee_name, meeting_date, url, ready, agenda_url="", root=None):
+    path = urllib.parse.urlparse(url or "").path
     if not ready or not path.lower().endswith(".pdf"):
         return None
-    kind = meeting_kind(committee_name, agenda_url)
     filename = path.rsplit("/", 1)[-1]
-    return f"data/{kind}/{committee_name}/{meeting_date}/{filename}"
+    home = match_home(url)
+    if home:
+        kind, committee, code = home
+    else:
+        kind = meeting_kind(committee_name, agenda_url)
+        committee = stable_committee(committee_name)
+        code = ""
+    if root is None:
+        root = Path(__file__).resolve().parents[1]
+    found = find_existing(kind, committee, filename, root)
+    if found:
+        return found
+    dated = date_after_code(filename, code)
+    agenda_home = match_home(agenda_url)
+    if dated is None and home and agenda_home and agenda_home[:2] == home[:2]:
+        dated = agenda_day(agenda_url)
+    return f"data/{kind}/{committee}/{dated or meeting_date}/{filename}"
 
 
 def probe(url, cutoff_utc):
