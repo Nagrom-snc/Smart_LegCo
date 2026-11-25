@@ -354,7 +354,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-11",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-20T02:28:17+00:00",
@@ -786,12 +786,14 @@
           "http_status": 200,
           "last_modified": "2026-11-24T09:17:07+00:00",
           "bytes": 673856,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/內務委員會/內務委員會會議/2026-11-20/hc20261120.pdf",
+          "sha256": "fa05214b39881be93f225f0150121d304bf8c9e605bc91f3db0f86fb300f94a4",
+          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
         }
       ],
       "motions": []

@@ -613,9 +613,9 @@
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc107/minutes/bc10720261119.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
+          "http_status": 200,
+          "last_modified": "2026-11-25T08:43:50+00:00",
+          "bytes": 821898,
           "on_site_at_cutoff": false,
           "role": "minutes",
           "paper_label": null,
