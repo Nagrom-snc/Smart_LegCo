@@ -134,7 +134,9 @@ HTTP 和 HTML 在邊界收成上面的列。邊界之內不再檢查空值。
 
 執行命令是 `python3 scripts/ingest.py`。不帶日期就用香港當天。`--date YYYY-MM-DD` 重跑該日下午 2 時 30 分的一輪，並跟進仍未完成、窗口未過的舊會議。2 時 30 分之前呼叫會直接返回，不讀議程，也不寫檔。資料庫是 `data/legco.sqlite`，不納入版本庫。
 
-時鐘是 GitHub Actions。`.github/workflows/daily-ingest.yml` 在 UTC 06:30 啟動，也就是香港時間 14:30。GitHub 可能遲幾分鐘才開跑。若開跑時香港時間仍未到 14:30，程式直接返回，不寫檔。遲過香港午夜，就會變成抓下一天。可以在 Actions 頁手動跑，並填 `date`。
+時鐘是 GitHub Actions。`.github/workflows/daily-ingest.yml` 在 UTC 06:30 啟動，也就是香港時間 14:30。GitHub 可能遲幾分鐘才開跑。本地打開程式和這條排程用同一條命令：`python3 scripts/ingest.py`。
+
+不帶日期時，程式只補最近一個已過 14:30、而 `data/YYYY-MM-DD/snapshot.json` 仍未存在的日子。14:30 之前，這一天是昨天，所以電腦在 14:30 沒開、或者排程遲過香港午夜才啟動，都會補抓錯過的那一天，而不會提前讀今天。快照已在就不再重跑。`--date YYYY-MM-DD` 仍是指定重跑那一天，即使快照已在也會再跑；指定日的 14:30 之前則直接返回，不寫檔。可以在 Actions 頁手動跑，並填 `date`。
 
 這條工作不需要倉庫密鑰。立法會的資料是公開的。它用 Actions 自帶的 `GITHUB_TOKEN`，權限是 `contents: write` 和 `pull-requests: write`。有改動就推上 `ingest/YYYY-MM-DD`，再開一條拉取請求，不直接寫 `main`。下載失敗時，已經寫下的快照和 CSV 仍會進那條請求，工作本身標成失敗。
 

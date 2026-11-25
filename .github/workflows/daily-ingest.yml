@@ -47,7 +47,10 @@ jobs:
           if [ -n "$INPUT_DATE" ]; then
             day="$INPUT_DATE"
           else
-            day="$(TZ=Asia/Hong_Kong date +%F)"
+            day="$(python3 -c 'import json; print(json.load(open("/tmp/ingest.json")).get("date") or "")' 2>/dev/null || true)"
+            if [ -z "$day" ]; then
+              day="$(TZ=Asia/Hong_Kong date +%F)"
+            fi
           fi
           branch="ingest/${day}"
           git config user.name "github-actions[bot]"

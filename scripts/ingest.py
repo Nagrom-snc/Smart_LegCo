@@ -3,22 +3,28 @@
 
 One run is the 14:30 HKT job for a Hong Kong date. It stores four tables in
 data/legco.sqlite, saves PDFs that were already on the site, and rewrites
-data/meetings.csv. There is no scheduler in this repo. Call this program at
-14:30 Asia/Hong_Kong from cron or another clock.
+data/meetings.csv. GitHub Actions and a local open share one command:
 
     python3 scripts/ingest.py
     python3 scripts/ingest.py --date 2026-11-20
 
+With no date, the command ingests the latest Hong Kong day whose 14:30
+cutoff has passed, and only when that day's snapshot is still missing.
+Before today's 14:30 that day is yesterday, so a start after midnight
+finishes the missed run and does not read today early. A snapshot that
+is already there is left alone.
+
+--date replays that day's 14:30 cutoff even when a snapshot exists.
 Before 14:30 on the chosen date the run reads nothing and writes nothing.
-A past date is a replay of that day's 14:30 cutoff. Open meetings from
-earlier dates are read again until minutes are stored or 21 days have passed.
+Open meetings from earlier dates are read again until minutes are stored
+or 21 days have passed.
 """
 
 import argparse
 import json
 import sqlite3
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import fetch_day
@@ -26,6 +32,7 @@ from export_meetings_csv import stamp_downloads, write_meetings_csv
 
 HKT = fetch_day.HKT
 DB_NAME = "legco.sqlite"
+MAX_STORED_PDF = 100_000_000
 
 
 def doc_key(doc):
@@ -289,30 +296,90 @@ def follow_up(conn, run_day, data_dir, now, refresh):
 
 
 def download_pdfs(conn, repo_root):
-    saved, skipped, failed = [], [], []
+    saved, skipped, failed, oversized = [], [], [], []
     rows = conn.execute(
         "SELECT url, local_path FROM document WHERE local_path IS NOT NULL AND local_path != ''"
     )
     for row in rows:
         dest = Path(repo_root) / row["local_path"]
         if dest.is_file() and dest.read_bytes()[:4] == b"%PDF":
-            skipped.append(row["local_path"])
+            if dest.stat().st_size > MAX_STORED_PDF:
+                dest.unlink()
+                oversized.append(row["local_path"])
+            else:
+                skipped.append(row["local_path"])
             continue
         code, _headers, body = fetch_day.get(row["url"])
         if code != 200 or not body.startswith(b"%PDF"):
             failed.append((row["local_path"], code))
             continue
+        if len(body) > MAX_STORED_PDF:
+            oversized.append(row["local_path"])
+            continue
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(body)
         saved.append(row["local_path"])
-    return saved, skipped, failed
+    return saved, skipped, failed, oversized
+
+
+def forget_local_paths(data_dir, paths):
+    """Drop local paths that were not stored, so the CSV keeps the URL only."""
+    drop = set(paths)
+    if not drop:
+        return 0
+    cleared = 0
+    for snap_path in sorted(Path(data_dir).glob("*/snapshot.json")):
+        snapshot = json.loads(snap_path.read_text(encoding="utf-8"))
+        changed = False
+        for meeting in snapshot.get("meetings") or []:
+            for doc in meeting.get("documents") or []:
+                if doc.get("local_path") in drop:
+                    doc["local_path"] = None
+                    doc["sha256"] = None
+                    doc["downloaded_at"] = None
+                    changed = True
+                    cleared += 1
+        if changed:
+            snap_path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return cleared
+
+
+def snapshot_path(data_dir, day):
+    return Path(data_dir) / day.isoformat() / "snapshot.json"
 
 
 def write_snapshot(data_dir, day, snapshot):
-    path = Path(data_dir) / day.isoformat() / "snapshot.json"
+    path = snapshot_path(data_dir, day)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
+
+
+def due_day(now):
+    """Latest Hong Kong date whose 14:30 cutoff has already passed."""
+    today = now.date()
+    if now >= fetch_day.cutoff_for(today):
+        return today
+    return today - timedelta(days=1)
+
+
+def open_ingest(now, data_dir, refresh=None, follow=True):
+    """Shared entry for the scheduled job and for opening the program.
+
+    Ingests due_day when data/YYYY-MM-DD/snapshot.json is missing.
+    """
+    day = due_day(now)
+    path = snapshot_path(data_dir, day)
+    if path.is_file():
+        return {
+            "skipped": True,
+            "reason": "already ingested",
+            "date": day.isoformat(),
+            "snapshot": str(path),
+        }
+    result = run(day, now, data_dir, refresh=refresh, follow=follow)
+    result["date"] = day.isoformat()
+    return result
 
 
 def run(day, now, data_dir, refresh=None, follow=True):
@@ -333,9 +400,10 @@ def run(day, now, data_dir, refresh=None, follow=True):
                 return fetch_day.one_meeting(row, meeting_day, run_cutoff, kept)
 
         followed = follow_up(conn, day, data_dir, now, refresh) if follow else []
-        saved, skipped, failed = download_pdfs(conn, data_dir.parent)
+        saved, skipped, failed, oversized = download_pdfs(conn, data_dir.parent)
     finally:
         conn.close()
+    forget_local_paths(data_dir, oversized)
     stamp_downloads(data_dir, freshly_saved=saved, now=datetime.now(timezone.utc))
     csv_path, csv_rows = write_meetings_csv(data_dir)
     return {
@@ -346,6 +414,7 @@ def run(day, now, data_dir, refresh=None, follow=True):
         "downloaded": saved,
         "already_stored": skipped,
         "download_failures": failed,
+        "omitted_large": oversized,
         "csv": str(csv_path),
         "csv_rows": csv_rows,
     }
@@ -353,7 +422,10 @@ def run(day, now, data_dir, refresh=None, follow=True):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Run one 14:30 HKT LegCo ingest.")
-    parser.add_argument("--date", help="Hong Kong date YYYY-MM-DD. Default: today in Asia/Hong_Kong.")
+    parser.add_argument(
+        "--date",
+        help="Replay this Hong Kong date YYYY-MM-DD. Omit to catch up the missing due day.",
+    )
     parser.add_argument("--data-dir", default=None)
     parser.add_argument(
         "--no-follow-up",
@@ -362,10 +434,13 @@ def main(argv=None):
     )
     args = parser.parse_args(argv)
     now = datetime.now(HKT)
-    day = datetime.fromisoformat(args.date).date() if args.date else now.date()
     root = Path(__file__).resolve().parents[1]
     data_dir = Path(args.data_dir) if args.data_dir else root / "data"
-    result = run(day, now, data_dir, follow=not args.no_follow_up)
+    follow = not args.no_follow_up
+    if args.date:
+        result = run(datetime.fromisoformat(args.date).date(), now, data_dir, follow=follow)
+    else:
+        result = open_ingest(now, data_dir, follow=follow)
     print(json.dumps(result, ensure_ascii=False))
     if result.get("download_failures"):
         return 1
