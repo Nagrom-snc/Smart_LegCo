@@ -226,6 +226,68 @@ class IngestTest(unittest.TestCase):
             self.assertEqual(len(second["already_stored"]), 1)
             self.assertTrue((data / "legco.sqlite").exists())
 
+    def test_due_day_is_today_at_the_cutoff_and_yesterday_before_it(self):
+        self.assertEqual(ingest.due_day(datetime(2026, 11, 25, 14, 30, tzinfo=HKT)).isoformat(), "2026-11-25")
+        self.assertEqual(ingest.due_day(datetime(2026, 11, 25, 14, 29, tzinfo=HKT)).isoformat(), "2026-11-24")
+
+    def test_open_after_cutoff_ingests_today_only_when_the_snapshot_is_missing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data = Path(tmp) / "data"
+            now = datetime(2026, 11, 25, 15, 0, tzinfo=HKT)
+            seen = []
+
+            def fake_build(day, now=None):
+                seen.append(day.isoformat())
+                return {
+                    "as_of": "2026-11-25T14:30:00+08:00",
+                    "observed_at": "2026-11-25T07:00:00+00:00",
+                    "meetings": [],
+                    "votes_after_cutoff": [],
+                }
+
+            original_build = fetch_day.build_snapshot
+            fetch_day.build_snapshot = fake_build
+            try:
+                first = ingest.open_ingest(now, data, follow=False)
+                second = ingest.open_ingest(now, data, follow=False)
+            finally:
+                fetch_day.build_snapshot = original_build
+            self.assertEqual(seen, ["2026-11-25"])
+            self.assertFalse(first["skipped"])
+            self.assertEqual(first["date"], "2026-11-25")
+            self.assertTrue(second["skipped"])
+            self.assertEqual(second["reason"], "already ingested")
+            self.assertEqual(second["date"], "2026-11-25")
+
+    def test_open_before_cutoff_catches_up_yesterday(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data = Path(tmp) / "data"
+            now = datetime(2026, 11, 25, 2, 4, tzinfo=HKT)
+            seen = []
+
+            def fake_build(day, now=None):
+                seen.append(day.isoformat())
+                return {
+                    "as_of": "2026-11-24T14:30:00+08:00",
+                    "observed_at": "2026-11-24T18:04:00+00:00",
+                    "meetings": [],
+                    "votes_after_cutoff": [],
+                }
+
+            original_build = fetch_day.build_snapshot
+            fetch_day.build_snapshot = fake_build
+            try:
+                missing = ingest.open_ingest(now, data, follow=False)
+                (data / "2026-11-24" / "snapshot.json").write_text("{}\n", encoding="utf-8")
+                stored = ingest.open_ingest(now, data, follow=False)
+            finally:
+                fetch_day.build_snapshot = original_build
+            self.assertEqual(seen, ["2026-11-24"])
+            self.assertEqual(missing["date"], "2026-11-24")
+            self.assertFalse((data / "2026-11-25").exists())
+            self.assertTrue(stored["skipped"])
+            self.assertEqual(stored["date"], "2026-11-24")
+
 
 if __name__ == "__main__":
     unittest.main()

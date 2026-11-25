@@ -3,22 +3,28 @@
 
 One run is the 14:30 HKT job for a Hong Kong date. It stores four tables in
 data/legco.sqlite, saves PDFs that were already on the site, and rewrites
-data/meetings.csv. There is no scheduler in this repo. Call this program at
-14:30 Asia/Hong_Kong from cron or another clock.
+data/meetings.csv. GitHub Actions and a local open share one command:
 
     python3 scripts/ingest.py
     python3 scripts/ingest.py --date 2026-11-20
 
+With no date, the command ingests the latest Hong Kong day whose 14:30
+cutoff has passed, and only when that day's snapshot is still missing.
+Before today's 14:30 that day is yesterday, so a start after midnight
+finishes the missed run and does not read today early. A snapshot that
+is already there is left alone.
+
+--date replays that day's 14:30 cutoff even when a snapshot exists.
 Before 14:30 on the chosen date the run reads nothing and writes nothing.
-A past date is a replay of that day's 14:30 cutoff. Open meetings from
-earlier dates are read again until minutes are stored or 21 days have passed.
+Open meetings from earlier dates are read again until minutes are stored
+or 21 days have passed.
 """
 
 import argparse
 import json
 import sqlite3
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import fetch_day
@@ -308,11 +314,42 @@ def download_pdfs(conn, repo_root):
     return saved, skipped, failed
 
 
+def snapshot_path(data_dir, day):
+    return Path(data_dir) / day.isoformat() / "snapshot.json"
+
+
 def write_snapshot(data_dir, day, snapshot):
-    path = Path(data_dir) / day.isoformat() / "snapshot.json"
+    path = snapshot_path(data_dir, day)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
+
+
+def due_day(now):
+    """Latest Hong Kong date whose 14:30 cutoff has already passed."""
+    today = now.date()
+    if now >= fetch_day.cutoff_for(today):
+        return today
+    return today - timedelta(days=1)
+
+
+def open_ingest(now, data_dir, refresh=None, follow=True):
+    """Shared entry for the scheduled job and for opening the program.
+
+    Ingests due_day when data/YYYY-MM-DD/snapshot.json is missing.
+    """
+    day = due_day(now)
+    path = snapshot_path(data_dir, day)
+    if path.is_file():
+        return {
+            "skipped": True,
+            "reason": "already ingested",
+            "date": day.isoformat(),
+            "snapshot": str(path),
+        }
+    result = run(day, now, data_dir, refresh=refresh, follow=follow)
+    result["date"] = day.isoformat()
+    return result
 
 
 def run(day, now, data_dir, refresh=None, follow=True):
@@ -353,7 +390,10 @@ def run(day, now, data_dir, refresh=None, follow=True):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Run one 14:30 HKT LegCo ingest.")
-    parser.add_argument("--date", help="Hong Kong date YYYY-MM-DD. Default: today in Asia/Hong_Kong.")
+    parser.add_argument(
+        "--date",
+        help="Replay this Hong Kong date YYYY-MM-DD. Omit to catch up the missing due day.",
+    )
     parser.add_argument("--data-dir", default=None)
     parser.add_argument(
         "--no-follow-up",
@@ -362,10 +402,13 @@ def main(argv=None):
     )
     args = parser.parse_args(argv)
     now = datetime.now(HKT)
-    day = datetime.fromisoformat(args.date).date() if args.date else now.date()
     root = Path(__file__).resolve().parents[1]
     data_dir = Path(args.data_dir) if args.data_dir else root / "data"
-    result = run(day, now, data_dir, follow=not args.no_follow_up)
+    follow = not args.no_follow_up
+    if args.date:
+        result = run(datetime.fromisoformat(args.date).date(), now, data_dir, follow=follow)
+    else:
+        result = open_ingest(now, data_dir, follow=follow)
     print(json.dumps(result, ensure_ascii=False))
     if result.get("download_failures"):
         return 1
