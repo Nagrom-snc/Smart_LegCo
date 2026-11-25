@@ -1,0 +1,47 @@
+---
+title: "每日下午2時30分的立法會抓取"
+---
+stateDiagram-v2
+  state "Legend" as legend {
+    lg0: 等待
+    lg1: 待補
+    lg2: 完成
+    lg3: 到期
+    lg4: 錯過
+  }
+  class lg0 blue
+  class lg1 yellow
+  class lg2 teal
+  class lg3 pink
+  class lg4 orange
+  s0: 第一天，未到下午2時30分
+  s1: 第一天已到2時30分，尚未抓取
+  s2: 第二天早上，昨天尚未抓取
+  s3: 第一天已抓，會議待補
+  s4: 已過補抓窗口，第一天沒有快照
+  s5: 第二天早上，昨天已入庫
+  s6: 第二天已抓，第一天的會議不在庫
+  s7: 第二天已到2時30分，待跟進昨天的會議
+  s8: 跟進窗口已過，會議標成到期
+  s9: 會議已齊，紀要已存
+  [*] --> s0
+  s0 --> s1: 到了第一天下午2時30分
+  s1 --> s2: 當日沒跑，進入第二天早上
+  s1 --> s3: 抓取第一天：存議程，會議留待補，重寫CSV
+  s2 --> s4: 到了第二天下午2時30分，不再補昨天
+  s2 --> s5: 打開程式，補抓昨天：存議程，重寫CSV
+  s3 --> s5: 進入第二天早上
+  s4 --> s6: 只抓第二天，第一天的會議沒有入庫
+  s5 --> s7: 到了第二天下午2時30分
+  s7 --> s8: 跟進昨天：窗口已過且沒有紀要，標成到期，重寫CSV
+  s7 --> s9: 跟進昨天：存入紀要，會議完成，重寫CSV
+  class s0 blue
+  class s1 blue
+  class s2 blue
+  class s3 yellow
+  class s4 blue
+  class s5 yellow
+  class s6 orange
+  class s7 yellow
+  class s8 pink
+  class s9 teal
