@@ -32,6 +32,7 @@ from export_meetings_csv import stamp_downloads, write_meetings_csv
 
 HKT = fetch_day.HKT
 DB_NAME = "legco.sqlite"
+MAX_STORED_PDF = 100_000_000
 
 
 def doc_key(doc):
@@ -295,23 +296,52 @@ def follow_up(conn, run_day, data_dir, now, refresh):
 
 
 def download_pdfs(conn, repo_root):
-    saved, skipped, failed = [], [], []
+    saved, skipped, failed, oversized = [], [], [], []
     rows = conn.execute(
         "SELECT url, local_path FROM document WHERE local_path IS NOT NULL AND local_path != ''"
     )
     for row in rows:
         dest = Path(repo_root) / row["local_path"]
         if dest.is_file() and dest.read_bytes()[:4] == b"%PDF":
-            skipped.append(row["local_path"])
+            if dest.stat().st_size > MAX_STORED_PDF:
+                dest.unlink()
+                oversized.append(row["local_path"])
+            else:
+                skipped.append(row["local_path"])
             continue
         code, _headers, body = fetch_day.get(row["url"])
         if code != 200 or not body.startswith(b"%PDF"):
             failed.append((row["local_path"], code))
             continue
+        if len(body) > MAX_STORED_PDF:
+            oversized.append(row["local_path"])
+            continue
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_bytes(body)
         saved.append(row["local_path"])
-    return saved, skipped, failed
+    return saved, skipped, failed, oversized
+
+
+def forget_local_paths(data_dir, paths):
+    """Drop local paths that were not stored, so the CSV keeps the URL only."""
+    drop = set(paths)
+    if not drop:
+        return 0
+    cleared = 0
+    for snap_path in sorted(Path(data_dir).glob("*/snapshot.json")):
+        snapshot = json.loads(snap_path.read_text(encoding="utf-8"))
+        changed = False
+        for meeting in snapshot.get("meetings") or []:
+            for doc in meeting.get("documents") or []:
+                if doc.get("local_path") in drop:
+                    doc["local_path"] = None
+                    doc["sha256"] = None
+                    doc["downloaded_at"] = None
+                    changed = True
+                    cleared += 1
+        if changed:
+            snap_path.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return cleared
 
 
 def snapshot_path(data_dir, day):
@@ -370,9 +400,10 @@ def run(day, now, data_dir, refresh=None, follow=True):
                 return fetch_day.one_meeting(row, meeting_day, run_cutoff, kept)
 
         followed = follow_up(conn, day, data_dir, now, refresh) if follow else []
-        saved, skipped, failed = download_pdfs(conn, data_dir.parent)
+        saved, skipped, failed, oversized = download_pdfs(conn, data_dir.parent)
     finally:
         conn.close()
+    forget_local_paths(data_dir, oversized)
     stamp_downloads(data_dir, freshly_saved=saved, now=datetime.now(timezone.utc))
     csv_path, csv_rows = write_meetings_csv(data_dir)
     return {
@@ -383,6 +414,7 @@ def run(day, now, data_dir, refresh=None, follow=True):
         "downloaded": saved,
         "already_stored": skipped,
         "download_failures": failed,
+        "omitted_large": oversized,
         "csv": str(csv_path),
         "csv_rows": csv_rows,
     }

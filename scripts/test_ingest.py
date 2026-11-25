@@ -288,6 +288,43 @@ class IngestTest(unittest.TestCase):
             self.assertTrue(stored["skipped"])
             self.assertEqual(stored["date"], "2026-11-24")
 
+    def test_a_pdf_over_the_github_limit_is_left_as_a_url(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            data = Path(tmp) / "data"
+            ready = meeting(
+                11,
+                "2026-11-25",
+                local_path="data/大會/立法會會議/2026-11-25/speech.pdf",
+            )
+            snapshot = {
+                "as_of": "2026-11-25T14:30:00+08:00",
+                "observed_at": "2026-11-25T07:00:00+00:00",
+                "meetings": [ready],
+                "votes_after_cutoff": [],
+            }
+            original_build = fetch_day.build_snapshot
+            original_get = fetch_day.get
+            original_limit = ingest.MAX_STORED_PDF
+            fetch_day.build_snapshot = lambda day, now=None: snapshot
+            fetch_day.get = lambda url, method="GET": (200, {}, b"%PDF-1.4" + b"x" * 32)
+            ingest.MAX_STORED_PDF = 16
+            try:
+                now = datetime(2026, 11, 25, 15, 0, tzinfo=HKT)
+                result = ingest.run(now.date(), now, data, follow=False)
+            finally:
+                fetch_day.build_snapshot = original_build
+                fetch_day.get = original_get
+                ingest.MAX_STORED_PDF = original_limit
+            self.assertEqual(result["downloaded"], [])
+            self.assertEqual(result["omitted_large"], ["data/大會/立法會會議/2026-11-25/speech.pdf"])
+            self.assertFalse((Path(tmp) / "data/大會/立法會會議/2026-11-25/speech.pdf").exists())
+            stored = json.loads((data / "2026-11-25" / "snapshot.json").read_text(encoding="utf-8"))
+            doc = stored["meetings"][0]["documents"][0]
+            self.assertIsNone(doc["local_path"])
+            text = (data / "meetings.csv").read_text(encoding="utf-8-sig")
+            self.assertIn("https://example.test/paper.pdf", text)
+            self.assertNotIn("speech.pdf", text)
+
 
 if __name__ == "__main__":
     unittest.main()
