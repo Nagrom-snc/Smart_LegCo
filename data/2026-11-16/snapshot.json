@@ -52,7 +52,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-1-c.pdf",
           "sha256": "91c96cddd3657e660be2266b00aa4e341fc29a33e4bb067c068729a486f97b0e",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116-cb3-1361-2-c.pdf",
@@ -66,7 +66,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116-cb3-1361-2-c.pdf",
           "sha256": "6771e638a9b287c825630c73cc8240efc3a76fd9531199fffe0faaf4ec105b73",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-3-c.pdf",
@@ -80,7 +80,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-3-c.pdf",
           "sha256": "003a7b8c3bdc44b3cc46efe2736b23d707fa42736d89e26dd318505f10a9ec3f",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-4-c.pdf",
@@ -94,7 +94,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-4-c.pdf",
           "sha256": "02b908bca78010ebcb1d2bee39f50a3639a5b08d81b658b0752d2e48ef017e94",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/papers/ps20261116cb3-1361-5-c.pdf",
@@ -108,7 +108,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116cb3-1361-5-c.pdf",
           "sha256": "34ca3def43cef671dad81abafb1ee2e08d7a46bc192625553c6f9baa927eed77",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ps/minutes/ps20261116.pdf",
@@ -122,7 +122,7 @@
           "item_key": null,
           "local_path": "data/事務委員會/公務員及資助機構員工事務委員會會議/2026-11-16/ps20261116.pdf",
           "sha256": "fc1f47f0c8b918c4ad55b99b7764fb2c653ad4296d24ede96db6967ef5030b4a",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         }
       ],
       "motions": []
@@ -173,7 +173,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116cb2-1500-1-c.pdf",
           "sha256": "5d2855ec70d24a06d16607fad60340ba8d45f5d22330f9ebfef39f6625c03713",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/papers/ca20261116cb2-1500-2-c.pdf",
@@ -187,7 +187,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116cb2-1500-2-c.pdf",
           "sha256": "fadadb34b68b0eab25697172d3604e5dc91c60d09e70f76faa5aa2d6b7d8c060",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/papers/ca20261116cb2-1500-3-c.pdf",
@@ -201,7 +201,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116cb2-1500-3-c.pdf",
           "sha256": "ed839d0f83364be5b9e26294a2c8153ba72964c6c34c0e2e4c7e473caa15e5e8",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ca/minutes/ca20261116.pdf",
@@ -215,7 +215,7 @@
           "item_key": null,
           "local_path": "data/事務委員會/政制事務委員會會議/2026-11-16/ca20261116.pdf",
           "sha256": "5b528ca12aa158f7eaeb9a9843682a190fbc6e8c6f09d4e711df911f14f5a0f1",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         }
       ],
       "motions": []
