@@ -50,7 +50,7 @@
           "item_key": "I",
           "local_path": "data/事務委員會/發展事務委員會會議/2026-10-27/dev20261027.pdf",
           "sha256": "0d7b1f51067fe5fef92893fa6eb21ed1f08b2f101d153c7539d06796c9f8b09e",
-          "downloaded_at": "2026-11-25T15:20:51.043566+00:00"
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/dev/papers/dev20261027cb1-1469-1-c.pdf",
@@ -64,7 +64,7 @@
           "item_key": "I",
           "local_path": "data/事務委員會/發展事務委員會會議/2026-10-27/dev20261027cb1-1469-1-c.pdf",
           "sha256": "1e66bbfbee88141f3b438718690e02c02177144cca3c05ee2c0c926c596649ee",
-          "downloaded_at": "2026-11-25T15:20:51.043566+00:00"
+          "downloaded_at": "2026-11-21T11:42:38+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/pwsc/minutes/pwsc20261118.pdf",
@@ -265,7 +265,7 @@
           "item_key": "III",
           "local_path": "data/大會/立法會會議/2026-11-13/b202611131.pdf",
           "sha256": "10be906429c7fc5353afda1b5ed97020784b44196fb01c2f119ebaa96b89079e",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202611132.pdf",
@@ -279,7 +279,7 @@
           "item_key": "III",
           "local_path": "data/大會/立法會會議/2026-11-13/b202611132.pdf",
           "sha256": "c5e1653cc88857e1e022383365117d80e07942e75badf23b62365cd1e8b31dbe",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202611133.pdf",
@@ -293,7 +293,7 @@
           "item_key": "III",
           "local_path": "data/大會/立法會會議/2026-11-13/b202611133.pdf",
           "sha256": "84f4a8f9dc467372ee0eefab0d03b2f2c3967bba2baf70798f65ad83d86d401c",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202611134.pdf",
@@ -307,7 +307,7 @@
           "item_key": "III",
           "local_path": "data/大會/立法會會議/2026-11-13/b202611134.pdf",
           "sha256": "2e83f0532b710ef008a846bf860fc0b7e3536b1db6067571d447f174aacd299a",
-          "downloaded_at": "2026-11-25T15:19:05.242950+00:00"
+          "downloaded_at": "2026-11-20T23:02:03+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/council/bills.html?bill_key=10020&session=2026",
@@ -516,7 +516,7 @@
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc51/reports/bc5120261125cb2-1600-c.pdf",
           "http_status": 200,
-          "last_modified": "2026-11-18T09:50:20+00:00",
+          "last_modified": "2026-11-26T01:33:45+00:00",
           "bytes": 718790,
           "on_site_at_cutoff": true,
           "role": "agenda_paper",
@@ -530,8 +530,8 @@
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/floor/cm20261125-confirm-ec.pdf",
           "http_status": 200,
-          "last_modified": "2026-11-25T09:33:20+00:00",
-          "bytes": 6015056,
+          "last_modified": "2026-11-26T09:44:19+00:00",
+          "bytes": 6869013,
           "on_site_at_cutoff": false,
           "role": "minutes",
           "paper_label": null,
@@ -542,14 +542,16 @@
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261125.pdf",
           "http_status": 200,
-          "last_modified": "2026-11-25T10:43:21+00:00",
-          "bytes": 363897,
-          "on_site_at_cutoff": false,
+          "last_modified": "2026-11-26T04:23:09+00:00",
+          "bytes": 376590,
+          "on_site_at_cutoff": true,
           "role": "voting_sheet",
           "paper_label": null,
           "title": "表決結果",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/大會/立法會會議/2026-11-25/v20261125.pdf",
+          "sha256": "127ee550f506c61b4022c7d581029e00fdff29a2c768eff351df750950d5abb2",
+          "downloaded_at": "2026-11-26T09:47:31.403042+00:00"
         }
       ],
       "motions": [
@@ -580,6 +582,97 @@
           "motion_title": "《追加撥款(2025-2026年度)條例草案》 - 三讀",
           "result": "Passed",
           "vote_time": "2026-11-25T13:52:18+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 5,
+          "motion_title": "《2026年環境及自然保育基金(修訂)條例草案》 - 二讀",
+          "result": "Passed",
+          "vote_time": "2026-11-25T14:39:12+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 6,
+          "motion_title": "《2026年環境及自然保育基金(修訂)條例草案》 - 全體委員會審議 - 第1至3條納入條例草案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T14:40:05+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 7,
+          "motion_title": "《2026年環境及自然保育基金(修訂)條例草案》 - 本會採納財經事務及庫務局局長作出報告的議案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T14:40:57+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 8,
+          "motion_title": "《2026年環境及自然保育基金(修訂)條例草案》 - 三讀",
+          "result": "Passed",
+          "vote_time": "2026-11-25T14:41:44+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 9,
+          "motion_title": "《2026年税務(修訂)(與航運有關的活動及實物大宗商品交易的税務寬減)條例草案》 - 二讀",
+          "result": "Passed",
+          "vote_time": "2026-11-25T16:39:15+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 10,
+          "motion_title": "《2026年税務(修訂)(與航運有關的活動及實物大宗商品交易的税務寬減)條例草案》 - 全體委員會審議 - 第1至5、7、8、10至26及28至47條納入條例草案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T16:43:33+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 11,
+          "motion_title": "《2026年税務(修訂)(與航運有關的活動及實物大宗商品交易的税務寬減)條例草案》 - 全體委員會審議 - 運輸及物流局局長的修正案 - 第6、9、27及48條",
+          "result": "Passed",
+          "vote_time": "2026-11-25T16:44:09+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 12,
+          "motion_title": "《2026年税務(修訂)(與航運有關的活動及實物大宗商品交易的税務寬減)條例草案》 - 全體委員會審議 - 經修正的第6、9、27及48條納入條例草案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T16:44:36+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 13,
+          "motion_title": "《2026年税務(修訂)(與航運有關的活動及實物大宗商品交易的税務寬減)條例草案》 - 本會採納運輸及物流局局長作出報告的議案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T16:45:41+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 14,
+          "motion_title": "《2026年税務(修訂)(與航運有關的活動及實物大宗商品交易的税務寬減)條例草案》 - 三讀",
+          "result": "Passed",
+          "vote_time": "2026-11-25T16:46:40+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 15,
+          "motion_title": "陳永光議員對陳沛良議員的「檢視醫療保險成效，提升醫療服務效率」議案作出的修正案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T18:37:38+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 16,
+          "motion_title": "黃國議員對陳沛良議員就「檢視醫療保險成效，提升醫療服務效率」所提，經陳永光議員修正的議案，作出的修正案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T18:38:26+08:00"
+        },
+        {
+          "vote_type": "Council Meeting",
+          "vote_number": 17,
+          "motion_title": "陳沛良議員動議，經陳永光議員及黃國議員修正的「檢視醫療保險成效，提升醫療服務效率」議案",
+          "result": "Passed",
+          "vote_time": "2026-11-25T18:39:23+08:00"
         }
       ]
     }

@@ -140,9 +140,9 @@
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/mp/minutes/mp20261120.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
+          "http_status": 200,
+          "last_modified": "2026-11-26T07:05:43+00:00",
+          "bytes": 1318001,
           "on_site_at_cutoff": false,
           "role": "minutes",
           "paper_label": null,
@@ -332,9 +332,9 @@
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/tp/minutes/tp20261120.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
+          "http_status": 200,
+          "last_modified": "2026-11-26T07:22:17+00:00",
+          "bytes": 1170578,
           "on_site_at_cutoff": false,
           "role": "minutes",
           "paper_label": null,
@@ -807,7 +807,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-11",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-19T09:36:01+00:00",
@@ -850,15 +850,17 @@
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/fc/fc/minutes/fc20261120.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
-          "on_site_at_cutoff": false,
+          "http_status": 200,
+          "last_modified": "2026-11-26T02:55:15+00:00",
+          "bytes": 1054469,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/財務委員會/財務委員會會議/2026-11-20/fc20261120.pdf",
+          "sha256": "f384608bb5b0cdaa475ad42e31ad2e1f9d240a0cc74860751c3f4d046b2ade35",
+          "downloaded_at": "2026-11-26T09:47:31.403042+00:00"
         }
       ],
       "motions": []

@@ -66,6 +66,15 @@ class PathTest(unittest.TestCase):
         )
         self.assertEqual(continued, "data/大會/立法會會議/2026-11-11/cm20261111-sp099-c.pdf")
 
+    def test_schedule_note_is_not_a_council_meeting(self):
+        name = "《2026年野生動物保護(修訂)條例草案》委員會會議(下午2時30分至4時30分或在當天的立法會會議結束15分鐘後，以較後者為準)"
+        agenda = "https://www.legco.gov.hk/yr2026/chinese/bc/bc09/agenda/bc0920261126.htm"
+        self.assertFalse(fetch_day.is_council_meeting(name, agenda))
+        self.assertTrue(fetch_day.is_council_meeting(
+            "2026年11月25日立法會會議的延續",
+            "https://www.legco.gov.hk/yr2026/chinese/counmtg/agenda/cm20261125.htm",
+        ))
+
 HKT = fetch_day.HKT
 
 
