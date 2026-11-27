@@ -52,7 +52,7 @@
           "item_key": "I",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajlscb3-1330-1-e.pdf",
           "sha256": "07fc903cdbc9ee14ea186e0a3723033c0042138ee1a0f914f4051dc0723369b1",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/papers/ajls20261123cb3-1406-1-c.pdf",
@@ -66,7 +66,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajls20261123cb3-1406-1-c.pdf",
           "sha256": "0b90cf8dbf450e05f33eda389f75bbdd79c5dd68a28f6930dee91b0677ceb889",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/papers/ajls20261123cb3-1406-2-c.pdf",
@@ -80,7 +80,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajls20261123cb3-1406-2-c.pdf",
           "sha256": "e3f4c2e2b74fe5594b4fb11cac9fbfd6989be609c2be9118be09e25d32dec3c0",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/papers/ajls20261123cb3-1406-3-c.pdf",
@@ -94,7 +94,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajls20261123cb3-1406-3-c.pdf",
           "sha256": "f8d9e1f30adb5ea7be0da935ee66105390e3ca725c07779e2dcf3f77c086b1a0",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/papers/ajls20261123cb3-1406-4-c.pdf",
@@ -108,7 +108,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajls20261123cb3-1406-4-c.pdf",
           "sha256": "1a229ef845e48ce68c51c2168e645059545d0fbd83d7581fbfc41bdc196b6c2f",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.doj.gov.hk/en/hkiltta/pdf/anniversary_booklet_2024_2026_en.pdf",
@@ -122,7 +122,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/anniversary_booklet_2024_2026_en.pdf",
           "sha256": "4bd3c440a844e00f5126a23de2cef52dadad7ac9dc4e8c7e2b359e31477d198d",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/papers/ajls20261123cb3-1406-5-c.pdf",
@@ -136,7 +136,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajls20261123cb3-1406-5-c.pdf",
           "sha256": "9d485bbe947b11592ae5c2b48e3cdada7ec20e2502bc7a6b7eb99eac905008e6",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/papers/ajls20261123cb3-1406-6-c.pdf",
@@ -150,13 +150,13 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/司法及法律事務委員會會議/2026-11-23/ajls20261123cb3-1406-6-c.pdf",
           "sha256": "f3367fe6aa39125ab2ce8c2b28d72218db7481f4b380677784c476ede63f60cb",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ajls/minutes/ajls20261123.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
+          "http_status": 200,
+          "last_modified": "2026-11-27T09:54:28+00:00",
+          "bytes": 1253624,
           "on_site_at_cutoff": false,
           "role": "minutes",
           "paper_label": null,
@@ -205,7 +205,7 @@
           "item_key": "I",
           "local_path": "data/內務委員會/發展新質生產力小組委員會會議/2026-11-23/hs5120261123cb2-1587-1-c.pdf",
           "sha256": "5ddd6b1b4889a40ef05631c6e22c055eec02710f59a9575abf00a9f5f5185d95",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_com/hs51/papers/hs5120261123cb2-1587-2-c.pdf",
@@ -219,13 +219,13 @@
           "item_key": "I",
           "local_path": "data/內務委員會/發展新質生產力小組委員會會議/2026-11-23/hs5120261123cb2-1587-2-c.pdf",
           "sha256": "3fbbf3110b6558e55bacb600264b0996550c77e475509e9e37ee4fc50b44f717",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_com/hs51/minutes/hs5120261123.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
+          "http_status": 200,
+          "last_modified": "2026-11-27T06:57:39+00:00",
+          "bytes": 1033423,
           "on_site_at_cutoff": false,
           "role": "minutes",
           "paper_label": null,

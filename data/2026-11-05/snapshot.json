@@ -170,7 +170,7 @@
           "item_key": "III",
           "local_path": "data/大會/立法會會議/2026-11-04/cm20261104cb2-1381-1-c.pdf",
           "sha256": "f46d2327abc9386839a486f90f8c7c69f7cca85a265fe7879a006eaa57bc9215",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/CB(2)1403_2026(01)_c.pdf",
@@ -184,7 +184,7 @@
           "item_key": "IV",
           "local_path": "data/大會/立法會會議/2026-11-04/CB(2)1403_2026(01)_c.pdf",
           "sha256": "8d619118ee1cc72ec76b92642df51c53263c074c417864f29c024fa684cde11d",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261104cb1-1289-1-c.pdf",
@@ -198,7 +198,7 @@
           "item_key": "IV",
           "local_path": "data/大會/立法會會議/2026-11-04/cm20261104cb1-1289-1-c.pdf",
           "sha256": "2346e5fe536ac11142e11bb216f07f2e1bbc4c37f4046ef4e392f64102181df1",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261104cb1-1348-1-c.pdf",
@@ -212,7 +212,7 @@
           "item_key": "IV",
           "local_path": "data/大會/立法會會議/2026-11-04/cm20261104cb1-1348-1-c.pdf",
           "sha256": "ce9925ab68ef510f05dc8fb2012e92157681d28e0774bb4257c21b0e80205375",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261104cb1-1290-1-c.pdf",
@@ -226,7 +226,7 @@
           "item_key": "IV",
           "local_path": "data/大會/立法會會議/2026-11-04/cm20261104cb1-1290-1-c.pdf",
           "sha256": "d0d8d80c179fcaf2be8661627ec96d393092f9c82eea2d8a480d3a8183af541b",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/motion/m_papers/cm20261104cb1-1349-1-c.pdf",
@@ -240,7 +240,7 @@
           "item_key": "IV",
           "local_path": "data/大會/立法會會議/2026-11-04/cm20261104cb1-1349-1-c.pdf",
           "sha256": "41f8c83f5b3579bb0b1cbb4211fe5766a9893798ed7467a286b14c0ef2539e36",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/papers/cm20261104-sp097-ec.pdf",
@@ -254,7 +254,7 @@
           "item_key": "I",
           "local_path": "data/大會/立法會會議/2026-11-04/cm20261104-sp097-ec.pdf",
           "sha256": "a71fc5386eb5ef34958ea6fcf8c9004d551bd4d3e72de66e7d3cf84a7292cb5c",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hccb2-1374-c.pdf",
@@ -268,7 +268,7 @@
           "item_key": "I",
           "local_path": "data/內務委員會/內務委員會會議/2026-11-04/hccb2-1374-c.pdf",
           "sha256": "352f34d95a1871755a63c22bb6b96696f1abcbe92118a55bc515f8cfc920b18a",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc02/reports/bc0220261104cb1-1327-c.pdf",
@@ -282,7 +282,7 @@
           "item_key": "I",
           "local_path": "data/大會/立法會會議/2026-11-04/bc0220261104cb1-1327-c.pdf",
           "sha256": "4c7349aa898b88de8acfde488c54c63ac58a1d3a6370aa1d772e290b97bd12fb",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/floor/cm20261105-confirm-ec.pdf",
@@ -296,7 +296,7 @@
           "item_key": null,
           "local_path": "data/大會/立法會會議/2026-11-05/cm20261105-confirm-ec.pdf",
           "sha256": "766e25d88c3d33c47083c8470edf924e9fb922ffb6459195189182c11e5b856a",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261105.pdf",

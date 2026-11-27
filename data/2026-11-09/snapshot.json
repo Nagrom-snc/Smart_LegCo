@@ -52,7 +52,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-1-c.pdf",
           "sha256": "ae3accead70e9a168bfd3be32f2bd211660f6ab5b1b4e0003f30f8774a53bd90",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ws/papers/ws20261109cb1-1387-2-c.pdf",
@@ -66,7 +66,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-2-c.pdf",
           "sha256": "485a59044835878ddab7a227eb6bc63f3c06822bd9e893a070f2c8f1ce4e17e2",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ws/papers/ws20261109cb1-1387-3-c.pdf",
@@ -80,7 +80,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-3-c.pdf",
           "sha256": "8b5f3bc3620a87ddf2182cb1df41db0fed69be0637d00f3e78bb7481b5955c52",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ws/papers/ws20261109cb1-1387-4-c.pdf",
@@ -94,7 +94,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-4-c.pdf",
           "sha256": "be4bde88a652e74aa4881f3dd7aa4d62969e993c7f4eea16f11710ccf7b8ccb3",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ws/papers/ws20261109cb1-1387-5-c.pdf",
@@ -108,7 +108,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109cb1-1387-5-c.pdf",
           "sha256": "38c270a3ecf0da6c13e029fee55f4a2145ebe46948aa8b094c2d2c9b3c0314fd",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ws/minutes/ws20261109.pdf",
@@ -122,7 +122,7 @@
           "item_key": null,
           "local_path": "data/事務委員會/福利事務委員會會議/2026-11-09/ws20261109.pdf",
           "sha256": "732596289b3f43f99d5fcdbeed298a4dea79ca69250bc6f5064dd45433192857",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         }
       ],
       "motions": []
@@ -165,7 +165,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-09-28/bc10520260928cb3-1307-1-c.pdf",
           "sha256": "bd83afa6444e3eed5bd0bdeee0d2d314087197c1aaca1694df2fef4c0a1792f4",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260928cb3-1307-2-c.pdf",
@@ -179,7 +179,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-09-28/bc10520260928cb3-1307-2-c.pdf",
           "sha256": "b8f6b8ab5bbd3204aefa5c9afb5b835b95950ea5d0cbc8e60151fd4cb421f927",
-          "downloaded_at": "2026-11-24T12:49:07+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520261006cb3-1315-1-c.pdf",
@@ -193,7 +193,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-10-06/bc10520261006cb3-1315-1-c.pdf",
           "sha256": "1af975be9228ade8038fa9fefb375798d01af1e248a3be8a197498260a9d567f",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520261006cb3-1315-2-c.pdf",
@@ -207,7 +207,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-10-06/bc10520261006cb3-1315-2-c.pdf",
           "sha256": "b78518c50706281f3f145abf975fae0036d8aa42f226b0de39c347810fe53eb6",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520261013cb3-1315-3-c.pdf",
@@ -221,7 +221,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-10-13/bc10520261013cb3-1315-3-c.pdf",
           "sha256": "8761a08f661edf2bc7776e884157a93397df97882668660649ec4af5695253fc",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520261013cb3-1315-4-c.pdf",
@@ -235,7 +235,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-10-13/bc10520261013cb3-1315-4-c.pdf",
           "sha256": "452e2b144494be3e4768ba8004d9271795774ddedbbc13f6245e5d41fefca47f",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520261109cb3-1263-1-c.pdf",
@@ -249,7 +249,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-11-09/bc10520261109cb3-1263-1-c.pdf",
           "sha256": "b8a972ec5f2be0cdecdfd8d0e096660f277fc9327190f844cf5f15185faad6c3",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bills/b202606263.pdf",
@@ -263,7 +263,7 @@
           "item_key": "I",
           "local_path": "data/大會/立法會會議/2026-06-26/b202606263.pdf",
           "sha256": "abda3c9df4863887d8395cf17dacf6d9dde460b50bb2e5781430032a8074b8af",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/brief/hhbcr1f326192pt61_20260626-c.pdf",
@@ -277,7 +277,7 @@
           "item_key": "I",
           "local_path": "data/大會/立法會會議/2026-11-09/hhbcr1f326192pt61_20260626-c.pdf",
           "sha256": "cae54916d1b183fcb31e5b4f1121a84a30d8e8abe963d80fa4b52217c79d6b27",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/papers/hc20260710ls-43-c.pdf",
@@ -291,7 +291,7 @@
           "item_key": "I",
           "local_path": "data/內務委員會/內務委員會會議/2026-07-10/hc20260710ls-43-c.pdf",
           "sha256": "4c1a391d0a5b328e34c636077240c277a726c68da6d4f1bd32d239f209caac01",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260825cb3-921-1-c.pdf",
@@ -305,7 +305,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-08-25/bc10520260825cb3-921-1-c.pdf",
           "sha256": "5ed5a88b5d9e6ea93e921b34e2b273e96dc7cc508a71374dcb46287bf21c9655",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260825cb3-968-1-c.pdf",
@@ -319,7 +319,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-08-25/bc10520260825cb3-968-1-c.pdf",
           "sha256": "d0480399bc51d6deb0d21d932b0cf8b1c0b1526712c01b656d7919fd8211c147",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260825cb3-968-2-c.pdf",
@@ -333,7 +333,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-08-25/bc10520260825cb3-968-2-c.pdf",
           "sha256": "03187ba516315e099586d71a13f71dbf378fa459c57f023cc56950168d323be3",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260925cb3-1045-4-c.pdf",
@@ -347,7 +347,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-09-25/bc10520260925cb3-1045-4-c.pdf",
           "sha256": "3b399b81923e2163dbee983b26fcbddc1a8139c7d0cb6496a82a48b54aa84548",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260925cb3-1004-1-c.pdf",
@@ -361,7 +361,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-09-25/bc10520260925cb3-1004-1-c.pdf",
           "sha256": "216d0ca136c2a6f518b35e53dcaa073b9586e33b69d31dbbe48e4b5b884d035c",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260925cb3-1045-5-c.pdf",
@@ -375,7 +375,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-09-25/bc10520260925cb3-1045-5-c.pdf",
           "sha256": "3e4df1d7caa46ab64a5eb73c16dc7d32d0614b90c67e6aea59dd5f20decdffc9",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260925cb3-1058-1-c.pdf",
@@ -389,7 +389,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-09-25/bc10520260925cb3-1058-1-c.pdf",
           "sha256": "403d43cab11cbeca3c87df0a0cc04b0692a76c1aff8a3ad3c47f970513f83fa6",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520261006cb3-1110-1-c.pdf",
@@ -403,7 +403,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-10-06/bc10520261006cb3-1110-1-c.pdf",
           "sha256": "d8bd44905be388ac501cae09352cc6954f934105f117788c9cae8efad459af35",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/bc/bc105/papers/bc10520260825cb3-921-3-c.pdf",
@@ -417,7 +417,7 @@
           "item_key": "I",
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-08-25/bc10520260825cb3-921-3-c.pdf",
           "sha256": "b1ac2f22e62a4efcde00a282798229785875b194ced4e303260ad8a633c142d4",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/tc/legco-business/committees/bills-committee.html?2026&bc105#papers-and-reports",
@@ -443,7 +443,7 @@
           "item_key": null,
           "local_path": "data/法案委員會/《2026年醫生註冊(修訂)條例草案》委員會會議/2026-11-09/bc10520261109.pdf",
           "sha256": "0c39d29ca77e3e1c9db3151b311cb95451d0342ac75c0ba4d2df93b10f8b6f6a",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         }
       ],
       "motions": []
@@ -502,7 +502,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-1-c.pdf",
           "sha256": "6b7c8d003c0dc8674b6a2b2615a51c56a97830834af5872e4798f2960a212093",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-2-c.pdf",
@@ -516,7 +516,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-2-c.pdf",
           "sha256": "cc86b80f5dcc6723f7cc669d249ad9f24bae1b2b5e76c3a4dc923d4899c25d1d",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-3-c.pdf",
@@ -530,7 +530,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-3-c.pdf",
           "sha256": "b491cb7d0e357d99ed1774e2806fd339dcb133e3f9cc4e9e68b785abbd165c9c",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-4-c.pdf",
@@ -544,7 +544,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-4-c.pdf",
           "sha256": "9ea1e0a6847c2fe10c15c82bc749c6e9ce9e4e41f8d425ef978688ca94d1a441",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-5-c.pdf",
@@ -558,7 +558,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-5-c.pdf",
           "sha256": "d86d83c8e6608ae474ee55e5888cfc03dc2b296a7c9d439e65ce30dab5fe03d0",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-6-c.pdf",
@@ -572,7 +572,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-6-c.pdf",
           "sha256": "240093a627b40ce069d6c8ec9df98bdb0ce8266ac6eaea23192d83425acf3c3b",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-7-c.pdf",
@@ -586,7 +586,7 @@
           "item_key": "V",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-7-c.pdf",
           "sha256": "cd20eb1c106366cc22f65ae35cf7213b77443e38729ef6153e52ddac97c51335",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/papers/itb20261109cb2-1428-8-c.pdf",
@@ -600,7 +600,7 @@
           "item_key": "V",
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109cb2-1428-8-c.pdf",
           "sha256": "613f1f17de9313137bcb68e8ba9061644ea8534e824b9ccf5ed87dfde448742a",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/itb/minutes/itb20261109.pdf",
@@ -614,7 +614,7 @@
           "item_key": null,
           "local_path": "data/事務委員會/資訊科技及廣播事務委員會會議/2026-11-09/itb20261109.pdf",
           "sha256": "ad5baf263e1cb9f31af001cf79bba894d2af408e52c8eb1e88ae9ec0eb6b54ce",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         }
       ],
       "motions": []
@@ -669,7 +669,7 @@
           "item_key": "I",
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/hacb3-1232-1-c.pdf",
           "sha256": "64cf63a4e5325194ababc1dee296e1eceec0b983ec500f44d09d656cadb6546e",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/papers/ha20261109cb3-1314-1-c.pdf",
@@ -683,7 +683,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/ha20261109cb3-1314-1-c.pdf",
           "sha256": "68b80541201e03e8e59fd0f972c09281cba61e30745538894d5a464f75ffcfe1",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/papers/ha20261109cb3-1314-2-c.pdf",
@@ -697,7 +697,7 @@
           "item_key": "II",
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/ha20261109cb3-1314-2-c.pdf",
           "sha256": "86484d6fa319bb2abffb61ebec03eb7f3b9cecc5328d226f433cefacff6ad96a",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/papers/ha20261109cb3-1314-3-c.pdf",
@@ -711,7 +711,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/ha20261109cb3-1314-3-c.pdf",
           "sha256": "55413fe1a5394e060b2d602923d3fa505cc93279ed8e0fed752106506e195354",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/papers/ha20261109cb3-1314-4-c.pdf",
@@ -725,7 +725,7 @@
           "item_key": "III",
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/ha20261109cb3-1314-4-c.pdf",
           "sha256": "f6297a95d38c68d667143ba7ad4c07c612550e4ca359ba8c49598e7dabfa8402",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/papers/ha20261109cb3-1317-1-c.pdf",
@@ -739,7 +739,7 @@
           "item_key": "IV",
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/ha20261109cb3-1317-1-c.pdf",
           "sha256": "fc762d130720c448d87f6246951b4702fd9891fb7c101f781c5b3b5b4c7ed207",
-          "downloaded_at": "2026-11-21T11:42:38+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/panels/ha/minutes/ha20261109.pdf",
@@ -753,7 +753,7 @@
           "item_key": null,
           "local_path": "data/事務委員會/民政及文化體育事務委員會會議/2026-11-09/ha20261109.pdf",
           "sha256": "d58f147ca60d5fb21623a300a5cd782a96b65484d571d47426788f74f9151d5d",
-          "downloaded_at": "2026-11-23T22:17:20+00:00"
+          "downloaded_at": "2026-11-25T17:56:31Z"
         }
       ],
       "motions": []
