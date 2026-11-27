@@ -66,6 +66,12 @@ class PathTest(unittest.TestCase):
         )
         self.assertEqual(continued, "data/大會/立法會會議/2026-11-11/cm20261111-sp099-c.pdf")
 
+    def test_document_key_uses_the_url_when_labels_match(self):
+        shared = {"paper_label": "補充資料", "title": "補充資料"}
+        one = ingest.doc_key({**shared, "url": "https://example.test/pwsc-117.pdf"})
+        two = ingest.doc_key({**shared, "url": "https://example.test/pwsc-121.pdf"})
+        self.assertNotEqual(one, two)
+
     def test_schedule_note_is_not_a_council_meeting(self):
         name = "《2026年野生動物保護(修訂)條例草案》委員會會議(下午2時30分至4時30分或在當天的立法會會議結束15分鐘後，以較後者為準)"
         agenda = "https://www.legco.gov.hk/yr2026/chinese/bc/bc09/agenda/bc0920261126.htm"

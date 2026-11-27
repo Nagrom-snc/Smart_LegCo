@@ -118,7 +118,7 @@
       "venue_name": "會議廳",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-16",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-25T02:48:32+00:00",
@@ -532,12 +532,14 @@
           "http_status": 200,
           "last_modified": "2026-11-26T09:44:19+00:00",
           "bytes": 6869013,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/大會/立法會會議/2026-11-25/cm20261125-confirm-ec.pdf",
+          "sha256": "d6c16b264bccf6525ff1bfe1c712c86c27002926467ac0694827ec3023126b8b",
+          "downloaded_at": "2026-11-27T17:07:34.658424+00:00"
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261125.pdf",
@@ -551,7 +553,7 @@
           "item_key": null,
           "local_path": "data/大會/立法會會議/2026-11-25/v20261125.pdf",
           "sha256": "127ee550f506c61b4022c7d581029e00fdff29a2c768eff351df750950d5abb2",
-          "downloaded_at": "2026-11-26T09:47:31.403042+00:00"
+          "downloaded_at": "2026-11-27T17:07:34.658424+00:00"
         }
       ],
       "motions": [

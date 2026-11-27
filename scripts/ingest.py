@@ -36,12 +36,12 @@ MAX_STORED_PDF = 100_000_000
 
 
 def doc_key(doc):
-    label = (doc.get("paper_label") or "").strip()
-    if label:
-        return label
     url = (doc.get("url") or "").strip()
     if url:
         return url
+    label = (doc.get("paper_label") or "").strip()
+    if label:
+        return label
     return (doc.get("title") or "").strip()
 
 

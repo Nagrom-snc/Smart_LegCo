@@ -11,7 +11,7 @@
       "venue_name": "會議室1",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-11",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-18T03:40:18+00:00",
@@ -143,12 +143,14 @@
           "http_status": 200,
           "last_modified": "2026-11-26T07:05:43+00:00",
           "bytes": 1318001,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/人力事務委員會會議/2026-11-20/mp20261120.pdf",
+          "sha256": "df8d7f062bb45fed59c1f1817d997f512039f99560ea31603521996eff367811",
+          "downloaded_at": "2026-11-27T17:07:34.658424+00:00"
         }
       ],
       "motions": []
@@ -162,7 +164,7 @@
       "venue_name": "會議室2B",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-11",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-19T02:40:51+00:00",
@@ -195,15 +197,17 @@
         },
         {
           "url": "https://www.legco.gov.hk/yr2026/chinese/hc/sub_com/hs52/minutes/hs5220261120.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
-          "on_site_at_cutoff": false,
+          "http_status": 200,
+          "last_modified": "2026-11-26T10:15:49+00:00",
+          "bytes": 982788,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/內務委員會/人工智能及機械人技術發展事宜小組委員會會議/2026-11-20/hs5220261120.pdf",
+          "sha256": "d5a2db10510b32ba02216837f84ee42390ec1f01ec4275f37b97609599e1570e",
+          "downloaded_at": "2026-11-27T17:07:34.658424+00:00"
         }
       ],
       "motions": []
@@ -217,7 +221,7 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-11",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-19T07:47:55+00:00",
@@ -335,12 +339,14 @@
           "http_status": 200,
           "last_modified": "2026-11-26T07:22:17+00:00",
           "bytes": 1170578,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
+          "local_path": "data/事務委員會/交通事務委員會會議/2026-11-20/tp20261120.pdf",
+          "sha256": "832f7ae2fe85f3d78652cf056b5143bbe1b8c68f8aac57914accc84821a0a4d0",
+          "downloaded_at": "2026-11-27T17:07:34.658424+00:00"
         }
       ],
       "motions": []
@@ -860,7 +866,7 @@
           "item_key": null,
           "local_path": "data/財務委員會/財務委員會會議/2026-11-20/fc20261120.pdf",
           "sha256": "f384608bb5b0cdaa475ad42e31ad2e1f9d240a0cc74860751c3f4d046b2ade35",
-          "downloaded_at": "2026-11-26T09:47:31.403042+00:00"
+          "downloaded_at": "2026-11-27T17:11:41.371394+00:00"
         }
       ],
       "motions": []
