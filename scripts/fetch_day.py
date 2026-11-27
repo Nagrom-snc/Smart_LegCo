@@ -189,6 +189,13 @@ def stable_committee(name):
     return name or "其他"
 
 
+def is_council_meeting(committee_name, agenda_url=""):
+    """Council business only. A time note that mentions 立法會會議 is not a council meeting."""
+    if "/counmtg/" in (agenda_url or ""):
+        return True
+    return stable_committee(committee_name) == "立法會會議"
+
+
 def match_home(url):
     path = urllib.parse.urlparse(url or "").path
     for fragment, kind, committee, code in HOMES:
@@ -324,13 +331,13 @@ def one_meeting(row, day, cutoff, kept_votes):
     if minutes:
         minutes.update({"role": "minutes", "paper_label": None, "title": "會議紀要", "item_key": None})
     voting_sheet = None
-    if "立法會會議" in (row.get("subject_chi") or ""):
+    if is_council_meeting(row.get("subject_chi") or "", agenda_url):
         voting_sheet = probe(
             f"{ROOT}/yr2026/chinese/counmtg/voting/v{day.strftime('%Y%m%d')}.pdf",
             cutoff_utc,
         )
         voting_sheet.update({"role": "voting_sheet", "paper_label": None, "title": "表決結果", "item_key": None})
-    motions = kept_votes if "立法會會議" in (row.get("subject_chi") or "") else []
+    motions = kept_votes if is_council_meeting(row.get("subject_chi") or "", agenda_url) else []
     stored_minutes = bool(minutes and minutes["on_site_at_cutoff"])
     committee = row["subject_chi"]
     docs = documents + [d for d in (minutes, voting_sheet) if d]

@@ -484,7 +484,7 @@
       "venue_name": "會議室3",
       "meeting_type": "公開會議",
       "follow_up_until": "2026-12-10",
-      "status": "open",
+      "status": "complete",
       "agenda_page": {
         "http_status": 200,
         "last_modified": "2026-11-18T09:27:19+00:00",
@@ -616,77 +616,17 @@
           "http_status": 200,
           "last_modified": "2026-11-25T08:43:50+00:00",
           "bytes": 821898,
-          "on_site_at_cutoff": false,
+          "on_site_at_cutoff": true,
           "role": "minutes",
           "paper_label": null,
           "title": "會議紀要",
           "item_key": null,
-          "local_path": null
-        },
-        {
-          "url": "https://www.legco.gov.hk/yr2026/chinese/counmtg/voting/v20261119.pdf",
-          "http_status": 404,
-          "last_modified": null,
-          "bytes": null,
-          "on_site_at_cutoff": false,
-          "role": "voting_sheet",
-          "paper_label": null,
-          "title": "表決結果",
-          "item_key": null,
-          "local_path": null
+          "local_path": "data/法案委員會/《2026年印花税(修訂)(第3號)條例草案》委員會會議/2026-11-19/bc10720261119.pdf",
+          "sha256": "d9b1034e1d7ae12548babb2b9ebd11c410d3433ac653217bed604652df822498",
+          "downloaded_at": "2026-11-26T09:47:31.403042+00:00"
         }
       ],
-      "motions": [
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 24,
-          "motion_title": "鄧飛議員對范凱傑議員的「深化國際教育樞紐建設，構建國際升學首選地」議案作出的修正案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T11:05:15+08:00"
-        },
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 25,
-          "motion_title": "李家駒議員對范凱傑議員就「深化國際教育樞紐建設，構建國際升學首選地」所提，經鄧飛議員修正的議案，作出的修正案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T11:05:55+08:00"
-        },
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 26,
-          "motion_title": "陳勇議員對范凱傑議員就「深化國際教育樞紐建設，構建國際升學首選地」所提，經鄧飛議員及李家駒議員修正的議案，作出的修正案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T11:06:33+08:00"
-        },
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 27,
-          "motion_title": "陳穎欣議員對范凱傑議員就「深化國際教育樞紐建設，構建國際升學首選地」所提，經鄧飛議員、李家駒議員及陳勇議員修正的議案，作出的修正案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T11:07:11+08:00"
-        },
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 28,
-          "motion_title": "范凱傑議員動議，經鄧飛議員、李家駒議員、陳勇議員及陳穎欣議員修正的「深化國際教育樞紐建設，構建國際升學首選地」議案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T11:08:16+08:00"
-        },
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 29,
-          "motion_title": "李廣宇議員對劉智鵬議員的「全面提升大學科研成果轉化能力，全力支援北都大學城'政、產、學、研、投'協同發展」議案作出的修正案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T14:11:24+08:00"
-        },
-        {
-          "vote_type": "Council Meeting",
-          "vote_number": 30,
-          "motion_title": "劉智鵬議員動議，經李廣宇議員修正的「全面提升大學科研成果轉化能力，全力支援北都大學城'政、產、學、研、投'協同發展」議案",
-          "result": "Passed",
-          "vote_time": "2026-11-19T14:12:17+08:00"
-        }
-      ]
+      "motions": []
     }
   ],
   "votes_after_cutoff": []
